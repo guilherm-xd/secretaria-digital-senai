@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2 class="sr-only">Secretaria Digital SENAI — Portal do aluno</h2>
+<link rel="stylesheet" href="style.css">
+<div class="wrap">
+
+  <nav class="topnav">
+    <div class="topnav-left">
+      <div class="brand">
+        <span class="brand-badge">SENAI</span>
+        <span class="brand-name">Secretaria Digital</span>
+      </div>
+      <div class="toplinks">
+        <div class="tl active">Home</div>
+        <div class="tl">Documentos</div>
+        <div class="tl">Estágio</div>
+        <div class="tl">Institucional</div>
+        <div class="tl">Contato</div>
+      </div>
+    </div>
+    <div class="topnav-right">
+      <div class="notif-btn" aria-label="Notificações">
+        <i class="ti ti-bell" aria-hidden="true"></i>
+        <span class="notif-dot"></span>
+      </div>
+      <div class="user-row">
+        <div class="avatar">AL</div>
+        <div class="user-info">
+          <div class="user-name">Alexandre</div>
+          <div class="user-role">Aluno</div>
+        </div>
+        <i class="ti ti-chevron-down" style="font-size:13px; color:var(--color-text-tertiary);" aria-hidden="true"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="body">
+
+    <div class="page-head">
+      <div>
+        <div class="page-title">Bom dia, Alexandre</div>
+        <div class="page-sub">Aqui está um resumo da sua vida acadêmica</div>
+      </div>
+      <button class="btn-primary">
+        <i class="ti ti-file-plus" aria-hidden="true"></i>
+        Emitir documento
+      </button>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-icon red"><i class="ti ti-files" aria-hidden="true"></i></div>
+        <div class="stat-val">3</div>
+        <div class="stat-label">Documentos emitidos</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon blue"><i class="ti ti-briefcase" aria-hidden="true"></i></div>
+        <div class="stat-val">1</div>
+        <div class="stat-label">Estágio em andamento</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon green"><i class="ti ti-message" aria-hidden="true"></i></div>
+        <div class="stat-val">2</div>
+        <div class="stat-label">Mensagens novas</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon amber"><i class="ti ti-building" aria-hidden="true"></i></div>
+        <div class="stat-val">5</div>
+        <div class="stat-label">Docs institucionais</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title"><i class="ti ti-layout-grid" aria-hidden="true"></i> Acesso rápido</div>
+        <div class="menu-list">
+          <div class="menu-row">
+            <div class="menu-icon mi-red"><i class="ti ti-file-plus" aria-hidden="true"></i></div>
+            <div class="menu-text">
+              <div class="menu-title">Emitir documentos</div>
+              <div class="menu-desc">Declarações, histórico, certificados</div>
+            </div>
+            <i class="ti ti-arrow-right menu-arrow" aria-hidden="true"></i>
+          </div>
+          <div class="menu-row">
+            <div class="menu-icon mi-blue"><i class="ti ti-files" aria-hidden="true"></i></div>
+            <div class="menu-text">
+              <div class="menu-title">Documentos emitidos</div>
+              <div class="menu-desc">Histórico de solicitações</div>
+            </div>
+            <i class="ti ti-arrow-right menu-arrow" aria-hidden="true"></i>
+          </div>
+          <div class="menu-row">
+            <div class="menu-icon mi-teal"><i class="ti ti-briefcase" aria-hidden="true"></i></div>
+            <div class="menu-text">
+              <div class="menu-title">Estágio</div>
+              <div class="menu-desc">Contratos e acompanhamento</div>
+            </div>
+            <i class="ti ti-arrow-right menu-arrow" aria-hidden="true"></i>
+          </div>
+          <div class="menu-row">
+            <div class="menu-icon mi-purple"><i class="ti ti-message" aria-hidden="true"></i></div>
+            <div class="menu-text">
+              <div class="menu-title">Mensagens</div>
+              <div class="menu-desc">Comunicados da secretaria</div>
+            </div>
+            <i class="ti ti-arrow-right menu-arrow" aria-hidden="true"></i>
+          </div>
+          <div class="menu-row">
+            <div class="menu-icon mi-amber"><i class="ti ti-building" aria-hidden="true"></i></div>
+            <div class="menu-text">
+              <div class="menu-title">Docs institucionais</div>
+              <div class="menu-desc">Regimentos e normas</div>
+            </div>
+            <i class="ti ti-arrow-right menu-arrow" aria-hidden="true"></i>
+          </div>
+          <div class="menu-row">
+            <div class="menu-icon mi-green"><i class="ti ti-headset" aria-hidden="true"></i></div>
+            <div class="menu-text">
+              <div class="menu-title">Contato</div>
+              <div class="menu-desc">Fale com a secretaria acadêmica</div>
+            </div>
+            <i class="ti ti-arrow-right menu-arrow" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><i class="ti ti-bell" aria-hidden="true"></i> Avisos recentes</div>
+        <div style="display:flex; flex-direction:column; gap:2px;">
+          <div class="notice">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+              <div class="notice-title">Prazo para solicitação de histórico</div>
+              <span class="tag tag-red">Urgente</span>
+            </div>
+            <div class="notice-text">O prazo para solicitação de histórico escolar com entrega em 5 dias úteis encerra na sexta-feira.</div>
+            <div class="notice-date">14 de maio de 2026</div>
+          </div>
+          <div style="height:10px;"></div>
+          <div class="notice">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+              <div class="notice-title">Calendário acadêmico atualizado</div>
+              <span class="tag tag-green">Novo</span>
+            </div>
+            <div class="notice-text">O calendário acadêmico do segundo semestre de 2026 já está disponível nos documentos institucionais.</div>
+            <div class="notice-date">10 de maio de 2026</div>
+          </div>
+          <div style="height:10px;"></div>
+          <div class="notice">
+            <div style="margin-bottom:4px;">
+              <div class="notice-title">Atendimento da secretaria</div>
+            </div>
+            <div class="notice-text">Em caso de dúvidas, entre em contato com a secretaria acadêmica. Atendimento de segunda a sexta, das 8h às 17h.</div>
+            <div class="notice-date">Permanente</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
