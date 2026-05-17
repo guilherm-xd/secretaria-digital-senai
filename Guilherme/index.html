@@ -1,16 +1,20 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Secretaria Digital - SENAI</title>
-  </head>
-  <body>
+  <title>Secretaria Digital - SENAI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
   <nav class="topnav">
     <div class="topnav-left">
       <div class="brand">
+        <span class="brand-logo">SENAI</span>
         <span class="brand-name">Secretaria Digital</span>
       </div>
       <div class="toplinks">
@@ -26,5 +30,97 @@
         <i class="ti ti-bell" aria-hidden="true"></i>
         <span class="notif-dot"></span>
       </div>
-  </body>
+      <div class="user-chip">
+        <div class="user-avatar">GH</div>
+        <span class="user-name">Guilherme</span>
+        <i class="ti ti-chevron-down" aria-hidden="true"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="subbar">
+    <i class="ti ti-home" aria-hidden="true"></i>
+    <span>Home</span>
+  </div>
+
+  <div class="page">
+
+    <div class="greeting">
+      <h1>Bem-vindo, Guilherme</h1>
+      <p>Resumo da sua conta acadêmica.</p>
+    </div>
+
+    <div class="stats-strip">
+      <div class="stat-cell red">
+        <div class="num">12</div>
+        <div class="lbl">Documentos emitidos</div>
+      </div>
+      <div class="stat-cell amber">
+        <div class="num">3</div>
+        <div class="lbl">Pendentes de aprovação</div>
+      </div>
+      <div class="stat-cell green">
+        <div class="num">9</div>
+        <div class="lbl">Concluídos</div>
+      </div>
+    </div>
+
+    <div class="main-grid">
+      <div class="card">
+        <div class="card-head">Ações rápidas</div>
+        <div class="card-body">
+          <a href="#" class="action-row">
+            <div class="ar-icon"><img src="images/images.png" alt="Emitir documento" height="30px"> </div>
+            <div>
+              <div class="at">Emitir documento</div>
+              <div class="as">Declaração, histórico e mais</div>
+            </div>
+            <i class="ti ti-arrow-right ar-arrow" aria-hidden="true"></i>
+          </a>
+          <div class="divider"></div>
+          <a href="#" class="action-row">
+            <div class="ar-icon"><i class="ti ti-files" aria-hidden="true"></i></div>
+            <div>
+              <div class="at">Documentos emitidos</div>
+              <div class="as">Histórico completo</div>
+            </div>
+            <i class="ti ti-arrow-right ar-arrow" aria-hidden="true"></i>
+          </a>
+          <div class="divider"></div>
+          <a href="#" class="action-row">
+            <div class="ar-icon"><i class="ti ti-building-community" aria-hidden="true"></i></div>
+            <div>
+              <div class="at">Ver estágio</div>
+              <div class="as">Acompanhe seu progresso</div>
+            </div>
+            <i class="ti ti-arrow-right ar-arrow" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">Secretaria acadêmica</div>
+        <div class="contact-body">
+          <p class="contact-text">Em caso de dúvidas, entre em contato com a secretaria acadêmica.</p>
+          <div class="info-list">
+            <div class="info-row">
+              <i class="ti ti-map-pin" aria-hidden="true"></i>
+              Encontre a unidade mais próxima
+            </div>
+            <div class="info-row">
+              <i class="ti ti-clock" aria-hidden="true"></i>
+              Seg – Sex, 08h às 17h
+            </div>
+          </div>
+          <button class="btn-red">
+            <i class="ti ti-building" aria-hidden="true"></i>
+            Ver unidades
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
 </html>
