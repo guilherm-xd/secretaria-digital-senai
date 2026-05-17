@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Danilo.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Contato - SENAI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav-topo">
+      <div class="marca">
+        <img src="img/SENAI_São_Paulo_logo.png" alt="Logo do SENAI" width="100px" />
+      </div>
+      <div class="links">
+        <span class="link">Início</span>
+        <span class="link">Documentos</span>
+        <span class="link">Estágio</span>
+        <span class="link">Institucional</span>
+        <span class="link ativo">Contato</span>
+      </div>
+      <div class="nav-direita">
+        <div class="sino">
+          <img src="img/notification-bell.png" alt="Notificações" width="16px" />
+          <span class="emblema">2</span>
+        </div>
+        <div class="usuario">
+          <img src="img/User-avatar.png" alt="Avatar" width="16px" />
+          <span>Usuário</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="pagina">
+      <div class="saudacao">
+        <h1>Contato</h1>
+        <p>Envie sua mensagem para a secretaria acadêmica.</p>
+      </div>
+
+      <div class="grade-contato">
+        <div class="cartao">
+          <h3>Enviar mensagem</h3>
+          <div class="formulario">
+            <div class="campo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" placeholder="Seu nome" />
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="seu@email.com" />
+            </div>
+            <div class="campo">
+              <label for="assunto">Assunto</label>
+              <select id="assunto">
+                <option value="" disabled selected>Selecione um assunto</option>
+                <option>Documentos</option>
+                <option>Frequência e faltas</option>
+                <option>Estágio</option>
+                <option>Financeiro</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" rows="5" placeholder="Descreva sua dúvida ou solicitação..."></textarea>
+            </div>
+            <a class="botao" href="Danilo.html">Enviar mensagem</a>
+          </div>
+        </div>
+
+        <div class="lado-contato">
+          <div class="cartao">
+            <h3>Informações</h3>
+            <div class="corpo-contato">
+              <p>Atendimento presencial e por e-mail de segunda a sexta, das 08h às 17h.</p>
+              <p>Para atendimento presencial, consulte a unidade mais próxima:</p>
+              <a href="https://sp.senai.br/unidades" target="_blank" class="botao">Ver unidades</a>
+            </div>
+          </div>
+          <br>
+          <div class="cartao">
+            <h3>Canais de atendimento</h3>
+            <br>
+            <div class="corpo-contato">
+              <div class="linha-contato">
+                <strong><img src="img/email.png" alt="E-mail" width="16px" /></strong>
+                <span>&nbsp; secretaria@sp.senai.br</span>
+              </div>
+              <hr />
+              <div class="linha-contato">
+                <strong><img src="img/telefone.png" alt="Telefone" width="13px" /></strong>
+                <span>&nbsp; (11) 3322-0050 </span>
+              </div>
+              <hr />
+              <div class="linha-contato">
+                <strong><img src="img/localizacao.png" alt="Localização" width="10px" /></strong>
+                <span>&nbsp; Sede FIESP</span> <br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Av. Paulista, 1313, São Paulo/SP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
