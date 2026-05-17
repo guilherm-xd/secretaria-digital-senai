@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentos Emitidos — Secretaria Digital SENAI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="#" class="logo">
+        <div class="logo-mark">SENAI</div>
+        <span class="logo-name">Secretaria Digital</span>
+      </a>
+      <div class="nav-links">
+        <a href="#" class="nl">Início</a>
+        <a href="#" class="nl on">Documentos</a>
+        <a href="#" class="nl">Estágio</a>
+        <a href="#" class="nl">Meus cursos</a>
+        <a href="#" class="nl">Contato</a>
+      </div>
+      <div class="nav-r">
+        <div class="ib"><span class="bdg"></span></div>
+        <div class="upill">
+          <div class="av"></div>
+          <span>Usuário</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page">
+      <div class="bc">
+        <a href="#" class="bc-back">←</a>
+        <a href="#" class="bc-a">Início</a>
+        <span class="bc-sep">/</span>
+        <span class="bc-cur">Documentos emitidos</span>
+      </div>
+
+      <div class="ph">
+        <div class="ph-text">
+          <h1>Documentos emitidos</h1>
+          <p>
+            Histórico completo de documentos solicitados e disponíveis para
+            download.
+          </p>
+        </div>
+        <button class="btn-new">+ Emitir novo documento</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-num" style="color: var(--red)">12</span>
+          <span class="stat-lbl">Total emitidos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" style="color: var(--amber)">3</span>
+          <span class="stat-lbl">Aguardando emissão</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" style="color: var(--green)">9</span>
+          <span class="stat-lbl">Disponíveis para baixar</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" style="color: var(--g400)">2025</span>
+          <span class="stat-lbl">Ano de referência</span>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="search">
+          <span class="search-ico"></span>
+          <input type="text" placeholder="Buscar documento…" />
+        </div>
+        <select class="fsel">
+          <option>Todos os cursos</option>
+          <option>Dev. de Sistemas</option>
+          <option>Desenvolvedor Back-end</option>
+          <option>Prog. em Python</option>
+        </select>
+        <select class="fsel">
+          <option>2025</option>
+          <option>2024</option>
+          <option>2023</option>
+        </select>
+      </div>
+
+      <div class="tabs">
+        <div class="tab on">Todos <span class="cnt">12</span></div>
+        <div class="tab">Prontos <span class="cnt">9</span></div>
+        <div class="tab">Pendentes <span class="cnt">3</span></div>
+        <div class="tab">Cancelados <span class="cnt">0</span></div>
+      </div>
+
+      <div class="card">
+        <table>
+          <colgroup>
+            <col class="c-doc" />
+            <col class="c-sol" />
+            <col class="c-emi" />
+            <col class="c-fmt" />
+            <col class="c-sta" />
+            <col class="c-act" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Documento</th>
+              <th>Solicitado</th>
+              <th>Emitido</th>
+              <th>Formato</th>
+              <th>Situação</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="doc-cell">
+                  <div class="dico r"></div>
+                  <div>
+                    <span class="dname">Declaração de Matrícula</span>
+                    <span class="dcurso">Desenvolvimento de Sistemas</span>
+                  </div>
+                </div>
+              </td>
+              <td class="date-cell">30/04/2025</td>
+              <td class="date-cell">02/05/2025</td>
+              <td class="fmt-cell">PDF</td>
+              <td><span class="chip ok">Pronto</span></td>
+              <td>
+                <div class="acts">
+                  <a href="#" class="abt dl" title="Baixar">⬇</a>
+                  <a href="#" class="abt" title="Visualizar">👁</a>
+                  <a href="#" class="abt" title="Compartilhar">↗</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="doc-cell">
+                  <div class="dico a"></div>
+                  <div>
+                    <span class="dname">Declaração para Estágio</span>
+                    <span class="dcurso">Desenvolvedor Back-end</span>
+                  </div>
+                </div>
+              </td>
+              <td class="date-cell">28/04/2025</td>
+              <td class="date-cell" style="color: var(--g300)">—</td>
+              <td class="fmt-cell">PDF</td>
+              <td><span class="chip wait">Pendente</span></td>
+              <td>
+                <div class="acts">
+                  <a href="#" class="abt dl dis" title="Aguardando">⬇</a>
+                  <a href="#" class="abt dis" title="Aguardando">👁</a>
+                  <a href="#" class="abt cancel" title="Cancelar">✕</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="doc-cell">
+                  <div class="dico a"></div>
+                  <div>
+                    <span class="dname">Histórico Escolar</span>
+                    <span class="dcurso">Desenvolvimento de Sistemas</span>
+                  </div>
+                </div>
+              </td>
+              <td class="date-cell">12/03/2025</td>
+              <td class="date-cell">15/03/2025</td>
+              <td class="fmt-cell">PDF</td>
+              <td><span class="chip ok">Pronto</span></td>
+              <td>
+                <div class="acts">
+                  <a href="#" class="abt dl">⬇</a>
+                  <a href="#" class="abt">👁</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="doc-cell">
+                  <div class="dico g"></div>
+                  <div>
+                    <span class="dname">Comprovante de Frequência</span>
+                    <span class="dcurso">Programação em Python</span>
+                  </div>
+                </div>
+              </td>
+              <td class="date-cell">05/02/2025</td>
+              <td class="date-cell">07/02/2025</td>
+              <td class="fmt-cell">PDF</td>
+              <td><span class="chip ok">Pronto</span></td>
+              <td>
+                <div class="acts">
+                  <a href="#" class="abt dl">⬇</a>
+                  <a href="#" class="abt">👁</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="doc-cell">
+                  <div class="dico r"></div>
+                  <div>
+                    <span class="dname">Declaração de Matrícula</span>
+                    <span class="dcurso">Programação em Python</span>
+                  </div>
+                </div>
+              </td>
+              <td class="date-cell">10/01/2025</td>
+              <td class="date-cell" style="color: var(--g300)">—</td>
+              <td class="fmt-cell">PDF</td>
+              <td><span class="chip wait">Pendente</span></td>
+              <td>
+                <div class="acts">
+                  <a href="#" class="abt dl dis">⬇</a>
+                  <a href="#" class="abt dis">👁</a>
+                  <a href="#" class="abt cancel">✕</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="doc-cell">
+                  <div class="dico g"></div>
+                  <div>
+                    <span class="dname">Certificado de Conclusão</span>
+                    <span class="dcurso">Desenvolvedor Back-end</span>
+                  </div>
+                </div>
+              </td>
+              <td class="date-cell">22/11/2024</td>
+              <td class="date-cell">24/11/2024</td>
+              <td class="fmt-cell">PDF + Ass. digital</td>
+              <td><span class="chip ok">Pronto</span></td>
+              <td>
+                <div class="acts">
+                  <a href="#" class="abt dl">⬇</a>
+                  <a href="#" class="abt">👁</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pag">
+          <span class="pag-info">Exibindo 6 de 12 documentos</span>
+          <div class="pag-btns">
+            <div class="pg arr">‹</div>
+            <div class="pg on">1</div>
+            <div class="pg">2</div>
+            <div class="pg arr">›</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
