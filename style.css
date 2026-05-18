@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --branco: #fff;
+  --vermelho: #ff0000;
+  --vermelho-escuro: #680c0c;
+  --vermelho-claro: #ff4d4d;
+  --preto: #1b1b1b;
+
+  --fonte-geral: "Quicksand", serif;
+  --fonte-head: "IBM Plex Serif", serif;
+  --fonte-alt: "Elms Sans", sans-serif;
+
+  --font-size-geral: 18px;
+  --font-size-head: 22px;
+  --font-size-alt: 14px;
+
+  --font-weight-geral: 400;
+  --font-weight-head: 700;
+  --font-weight-alt: 200;
+
+  --sombra: 0px 4px 24px rgba(0, 0, 0, 0.35);
+  --radius-btn: 8px;
+  --radius-geral: 16px;
+}
+
+body {
+  font-family: var(--fonte-alt);
+  font-weight: var(--font-weight-alt);
+  font-size: var(--font-size-alt);
+  background: black;
+}
+
+nav {
+  display: flex;
+  height: 56px;
+  align-items: center;
+  margin-bottom: 20px;
+  background: var(--vermelho);
+  padding-left: 20px;
+  max-height: 70px;
+  opacity: 0.9;
+}
+
+nav h1 {
+  font-family: var(--fonte-head);
+  font-size: var(--font-size-geral);
+  font-weight: var(--font-weight-geral);
+  color: var(--branco);
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  font-weight: lighter;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: -184px;
+  align-items:  center;
+  min-height: calc(100vh - 76px);
+}
+
+.welcome {
+  font-family: var(--fonte-alt);
+  font-size: var(--font-size-alt);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vermelho);
+  margin-bottom: 0.4rem;
+}
+
+.description {
+  font-family: var(--fonte-alt);
+  font-size: var(--font-size-alt);
+  color: rgb(94, 89, 89);
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  width: 2px;
+  height: 40px;
+  background-color: var(--branco);
+  margin: 0 14px;
+  align-self: center;
+}
+
+.card-login {
+  background: var(--branco);
+  width: 100%;
+  max-width: 460px;
+  border-bottom-left-radius: var(--radius-geral);
+  border-bottom-right-radius: var(--radius-geral);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  padding: 2.5rem;
+}
+
+.card-login h1 {
+  font-family: var(--fonte-head);
+  font-size: var(--font-size-head);
+  margin-bottom: 16px;
+  color: var(--preto);
+}
+
+.card-divider {
+  height: 1px;
+  background: rgba(128, 128, 128, 0.212);
+  margin: 0 -2.5rem 2rem;
+}
+
+.login-box {
+  margin-bottom: 1.1rem;
+}
+
+.login-box label {
+  display: block;
+  font-size: 0.6;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgb(94, 89, 89);
+  margin-bottom: 0.4rem;
+}
+
+.form-box,
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius-btn);
+  font-size: var(--font-size-alt);
+  width: 100%;
+  margin: 10px 0;
+}
+
+.form-box:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--vermelho);
+  box-shadow: 0 0 5px var(--vermelho);
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+.form-box:hover,
+input[type="text"]:hover {
+  border-color: var(--vermelho-claro);
+  box-shadow: 0 0 5px var(--vermelho-claro);
+  transition:
+    border-color 0.1s,
+    box-shadow 0.1s;
+}
+.button {
+  padding: 10px;
+  background-color: var(--vermelho);
+  color: var(--branco);
+  border: none;
+  border-radius: var(--radius-btn);
+  cursor: pointer;
+  font-size: var(--font-size-alt);
+  font-weight: bold;
+  width: 100%;
+}
+
+.button:hover {
+  background: var(--vermelho-escuro);
+}
