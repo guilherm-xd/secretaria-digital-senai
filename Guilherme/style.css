@@ -143,6 +143,11 @@ body {
   font-weight: 700;
 }
 
+.numero-vermelho { color: #cc0000; }
+.numero-laranja  { color: #b96c0a; }
+.numero-verde    { color: #1a7a42; }
+.numero-rosado   { color: #9e5151; }
+
 .rotulo {
   font-size: 12px;
   font-weight: 500;
@@ -258,12 +263,20 @@ body {
   color: #bbb;
 }
 
+.pct-ds { color: #1a7a42; font-weight: 700; }
+.pct-be { color: #b96c0a; font-weight: 700; }
+.pct-py { color: #1a7a42; font-weight: 700; }
+
 .barra {
   height: 5px;
   background: #f0f0f0;
   border-radius: 99px;
   overflow: hidden;
 }
+
+.preench-ds { height: 5px; width: 92%; background: #1a7a42; border-radius: 99px; }
+.preench-be { height: 5px; width: 78%; background: #b96c0a; border-radius: 99px; }
+.preench-py { height: 5px; width: 95%; background: #1a7a42; border-radius: 99px; }
 
 .linha-data {
   display: flex;
@@ -308,6 +321,18 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
 }
+
+.caixa-vermelha { background: #fff0f0; }
+.caixa-vermelha strong,
+.caixa-vermelha span { color: #cc0000; }
+
+.caixa-laranja { background: #fff8ee; }
+.caixa-laranja strong,
+.caixa-laranja span { color: #b96c0a; }
+
+.caixa-neutra { background: #f3f3f3; }
+.caixa-neutra strong { color: #555; }
+.caixa-neutra span { color: #999; }
 
 @media (max-width: 700px) {
   .nav-topo { padding: 0 16px; }
