@@ -1,36 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
+
 <body>
   <header>
- <nav class="topnav">
-    <div class="topnav-left">
-      <div class="brand">
-        <span class="brand-name">Secretaria Digital</span>
+    <nav class="nav-topo">
+      <div class="marca">
+        <img src="images/SENAI_São_Paulo_logo.png" alt="Logo do SENAI" width="100px" />
       </div>
-      <div class="toplinks">
-        <div class="tl active">Home</div>
-        <div class="tl">Documentos</div>
-        <div class="tl">Estágio</div>
-        <div class="tl">Institucional</div>
-        <div class="tl">Contato</div>
+      <div class="links">
+        <span class="link">Início</span>
+        <span class="link">Documentos</span>
+        <span class="link">Estágio</span>
+        <span class="link ativo">Meus cursos</span>
+        <span class="link">Contato</span>
       </div>
-    </div>
-    <div class="topnav-right">
-      <div class="notif-btn" aria-label="Notificações">
-        <i class="ti ti-bell" aria-hidden="true"></i>
-        <span class="notif-dot"></span>
+      <div class="nav-direita">
+        <div class="sino">
+          <img src="images/notification-bell.png" alt="Notificações" width="16px" />
+          <span class="emblema">2</span>
+        </div>
+        <div class="usuario">
+          <img src="images/User-avatar.png" alt="Avatar" width="16px" />
+          <span>Usuário</span>
+        </div>
       </div>
+    </nav>
   </header>
+  <div class="pagina">
 
-  <section class="title">
-    <h1 class="linha-vertical">Seus Cursos</h1>
+    <section class="title">
+      <h1 class="linha-vertical">Seus Cursos</h1>
+    </section>
 
-  </section>
+    <div class="cards">
+
+      <div class="card">
+        
+        <div class="topo">
+          
+          <h2 class="card-title">
+            Competência Transversal - Lógica de Programação
+          </h2>
+          
+          <hr class="linha">
+          
+          <p class=" texto-card">
+            Conhecer os princípios básicos da lógica de programação para poder criar sites, desenvolver games e programar
+            robôs.
+          </p>
+          
+          
+          <div class="duracao">
+            🕓
+            <span>Carga horária: <strong>14 horas</strong></span>
+          </div>
+          
+        </div>
+        
+        <div class="card-senai">
+          
+          <p>SENAI ONLINE</p>
+          
+          <button class="inscreva">
+            INSCREVA-SE
+          </button>
+          
+        </div>
+        
+      </div>
+      
+      <div class="card">
+        
+        <div class="topo">
+          
+          <h2 class="card-title">
+            Competência Transversal - Lógica de Programação
+        </h2>
+        
+        <hr class="linha">
+        
+        <p class=" texto-card">
+          Conhecer os princípios básicos da lógica de programação para poder criar sites, desenvolver games e programar
+          robôs.
+        </p>
+
+
+        <div class="duracao">
+          🕓
+          <span>Carga horária: <strong>14 horas</strong></span>
+        </div>
+
+      </div>
+      
+      <div class="card-senai">
+        
+        <p>SENAI ONLINE</p>
+        
+        <button class="inscreva">
+          INSCREVA-SE
+        </button>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+</div> 
 </body>
+
 </html>

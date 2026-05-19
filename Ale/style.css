@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -17,78 +15,113 @@
   --font: "Inter", sans-serif;
 }
 
-.topnav {
-  font-family: var(--font);
-  background: var(--bg-white);
-  border-bottom: 0.5px solid var(--border);
-  font-family: inter;
-  padding: 0 32px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: #f5f5f5;
+  color: #111;
+}
+
+.nav-topo {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  height: 58px;
+  padding: 0 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 58px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
-.topnav-left {
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  gap: 32px;
- border-bottom: 2px solid var(--red);
-
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-
-
-.toplinks {
+.links {
   display: flex;
   align-items: center;
   gap: 2px;
-  
 }
 
-.tl {
+.link {
   font-size: 13px;
-  color: var(--text-secondary);
+  color: #666;
   padding: 6px 12px;
-  border-radius: var(--radius-md);
+  border-radius: 8px;
   cursor: pointer;
-  white-space: nowrap;
-  text-decoration: none;
-  transition:
-    background 0.15s,
-    color 0.15s;
 }
 
-.tl:hover {
-  background: var(--bg-surface);
-  color: var(--text-primary);
+.link:hover {
+  background: #fff3f3;
+  color: #111;
 }
 
-.tl.active {
-  color: var(--red);
-  background: var(--red-light);
-  font-weight: 500;
+.link.ativo {
+  color: #cc0000;
+  background: #fef0f0;
+  font-weight: 600;
+}
+
+.nav-direita {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sino {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sino:hover {
+  background: #f0f0f0;
+}
+
+.emblema {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 14px;
+  height: 14px;
+  background: #cc0000;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px 4px 4px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.usuario img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.usuario span {
+  font-size: 13px;
+  font-weight: 600;
 }
 
 
 .title {
-  position: absolute;
-  top: 15%;
-  right: 40%;
-  transform: translate(-50%, -8 0%);
-  z-index: 2;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   color: rgb(0, 0, 0);
   width: 90%;
 }
@@ -105,4 +138,81 @@
   padding-left: 15px;
   margin-left: 10px;
   height: 55px;
+}
+
+.pagina {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 36px 24px;
+}
+
+.card {
+  width: 430px;
+  margin-top: 40px;
+  background: white;
+  border: 1px solid #5757575b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.topo {
+  padding: 22px;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-bottom: 18px;
+  text-align: center;
+  color: #000000;
+}
+
+.linha {
+  margin: 12px;
+  background-color: #1a1a1a;
+}
+
+
+.texto-card {
+  font-size: 16px;
+  color: #444;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.duracao {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+
+.card-senai {
+  border-top: 1px solid #dcdcdc;
+  padding: 20px;
+}
+
+.card-senai p {
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.inscreva {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 99px;
+  background: #ff0000;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.inscreva:hover {
+  transform: scale(1.04);
 }
