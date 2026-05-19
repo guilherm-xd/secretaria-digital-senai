@@ -41,6 +41,12 @@ body {
   color: #111;
 }
 
+.link.ativo {
+  background: #fef0f0;
+  color: #cc0000;
+  font-weight: 600;
+}
+
 .nav-direita {
   display: flex;
   gap: 10px;
