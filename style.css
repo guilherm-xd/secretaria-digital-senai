@@ -10,19 +10,15 @@
   --vermelho-escuro: #680c0c;
   --vermelho-claro: #ff4d4d;
   --preto: #1b1b1b;
-
   --fonte-geral: "Quicksand", serif;
   --fonte-head: "IBM Plex Serif", serif;
   --fonte-alt: "Elms Sans", sans-serif;
-
   --font-size-geral: 18px;
   --font-size-head: 22px;
   --font-size-alt: 14px;
-
   --font-weight-geral: 400;
   --font-weight-head: 700;
   --font-weight-alt: 200;
-
   --sombra: 0px 4px 24px rgba(0, 0, 0, 0.35);
   --radius-btn: 8px;
   --radius-geral: 16px;
@@ -33,6 +29,87 @@ body {
   font-weight: var(--font-weight-alt);
   font-size: var(--font-size-alt);
   background: black;
+}
+
+.capa {
+  position: relative;
+  height: 661px;
+}
+
+.slideshow {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.slideshow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  animation: troca 32s infinite;
+}
+
+.slideshow img:nth-child(1) {
+  animation-delay: 0s;
+}
+.slideshow img:nth-child(2) {
+  animation-delay: 4s;
+}
+.slideshow img:nth-child(3) {
+  animation-delay: 8s;
+}
+.slideshow img:nth-child(4) {
+  animation-delay: 12s;
+}
+.slideshow img:nth-child(5) {
+  animation-delay: 16s;
+}
+.slideshow img:nth-child(6) {
+  animation-delay: 20s;
+}
+.slideshow img:nth-child(7) {
+  animation-delay: 24s;
+}
+.slideshow img:nth-child(8) {
+  animation-delay: 28s;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes troca {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  25% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
 }
 
 nav {
@@ -60,12 +137,19 @@ nav h1 {
   font-weight: lighter;
 }
 
+header {
+  position: relative;
+  z-index: 2;
+}
+
 main {
   display: flex;
   justify-content: center;
   margin-top: -184px;
-  align-items:  center;
+  align-items: center;
   min-height: calc(100vh - 76px);
+  position: relative;
+  z-index: 2;
 }
 
 .welcome {
@@ -150,6 +234,7 @@ input[type="text"]:focus {
     border-color 0.3s,
     box-shadow 0.3s;
 }
+
 .form-box:hover,
 input[type="text"]:hover {
   border-color: var(--vermelho-claro);
@@ -158,6 +243,7 @@ input[type="text"]:hover {
     border-color 0.1s,
     box-shadow 0.1s;
 }
+
 .button {
   padding: 10px;
   background-color: var(--vermelho);
