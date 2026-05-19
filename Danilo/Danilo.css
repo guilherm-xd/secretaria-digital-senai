@@ -245,23 +245,10 @@ hr {
 .copiavel {
   cursor: pointer;
   position: relative;
+  text-decoration: none;
+  color: black;
 }
 
 .copiavel:hover {
   color: #cc0000;
-}
-
-.copiavel[data-copied]::after {
-  content: "Copiado!";
-  position: absolute;
-  top: -26px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #111;
-  color: #fff;
-  font-size: 11px;
-  padding: 3px 8px;
-  border-radius: 6px;
-  white-space: nowrap;
-  pointer-events: none;
 }

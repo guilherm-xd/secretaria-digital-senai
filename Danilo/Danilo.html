@@ -80,24 +80,50 @@
           </div>
           <br>
           <div class="cartao">
-            <h3>Canais de atendimento</h3>
-            <br>
-            <div class="corpo-contato">
-              <div class="linha-contato">
-                <strong><img src="img/email.png" alt="E-mail" width="16px" /></strong>
-                <span class="copiavel" onclick="navigator.clipboard.writeText('secretaria@sp.senai.br'); this.setAttribute('data-copied',''); setTimeout(()=>this.removeAttribute('data-copied'),1500)">&nbsp; secretaria@sp.senai.br</span>
-              </div>
-              <hr />
-              <div class="linha-contato">
-                <strong><img src="img/telefone.png" alt="Telefone" width="13px" /></strong>
-                <span class="copiavel" onclick="navigator.clipboard.writeText('(11) 3322-0050'); this.setAttribute('data-copied',''); setTimeout(()=>this.removeAttribute('data-copied'),1500)">&nbsp; (11) 3322-0050</span>
-              </div>
-              <hr />
-              <div class="linha-contato">
-                <strong><img src="img/localizacao.png" alt="Localização" width="10px" /></strong>
-                <span class="copiavel" onclick="navigator.clipboard.writeText('Av. Paulista, 1313, São Paulo/SP'); this.setAttribute('data-copied',''); setTimeout(()=>this.removeAttribute('data-copied'),1500)">&nbsp; Sede FIESP — Av. Paulista, 1313, São Paulo/SP</span>
-              </div>
-            </div>
+<h3>Canais de atendimento</h3>
+<br>
+
+<div class="corpo-contato">
+
+  <div class="linha-contato">
+    <strong>
+      <img src="img/email.png" alt="E-mail" width="16px" />
+    </strong>
+
+    <a href="mailto:secretaria@sp.senai.br?subject=Contato"
+       class="copiavel">
+      &nbsp; secretaria@sp.senai.br
+    </a>
+  </div>
+
+  <hr />
+
+  <div class="linha-contato">
+    <strong>
+      <img src="img/telefone.png" alt="Telefone" width="13px" />
+    </strong>
+
+    <a href="tel:+551133220050"
+       class="copiavel">
+      &nbsp; (11) 3322-0050
+    </a>
+  </div>
+
+  <hr />
+
+  <div class="linha-contato">
+    <strong>
+      <img src="img/localizacao.png" alt="Localização" width="10px" />
+    </strong>
+
+    <a href="https://maps.google.com/?q=Av.+Paulista,+1313,+São+Paulo"
+       target="_blank"
+       class="copiavel">
+      &nbsp; Sede FIESP - Av. Paulista, 1313, São Paulo/SP
+    </a>
+  </div>
+
+</div>
           </div>
         </div>
       </div>
