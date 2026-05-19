@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f5;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #111;
+}
+
+.nav-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+  padding: 0 48px;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.links {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.link {
+  font-size: 13px;
+  color: #666;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.link:hover {
+  background: #fff3f3;
+  color: #111;
+}
+
+.nav-direita {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sino {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.emblema {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #cc0000;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.usuario img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.pagina {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 36px 24px;
+}
+
+.saudacao {
+  margin-bottom: 28px;
+}
+
+.saudacao h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.saudacao p {
+  font-size: 13px;
+  color: #888;
+}
+
+.legenda {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.item-legenda {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.bolinha {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.grade-meses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.cartao {
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.titulo-mes {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.grade-dias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.dia-semana {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: #bbb;
+  padding-bottom: 6px;
+}
+
+.dia {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.dia.feriado {
+  background: #fff0f0;
+  color: #cc0000;
+  font-weight: 700;
+}
+
+.dia.emenda {
+  background: #fff8ee;
+  color: #b96c0a;
+}
+
+.dia.letivo {
+  background: #f0fdf5;
+  color: #1a7a42;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+}
+
+.dia.letivo::after {
+  content: attr(data-info);
+  position: absolute;
+  bottom: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+  z-index: 99;
+}
+
+.dia.letivo::before {
+  content: "";
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #111;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.dia.letivo:hover::after,
+.dia.letivo:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .grade-meses {
+    grid-template-columns: 1fr;
+  }
+}
