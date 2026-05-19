@@ -149,7 +149,7 @@ body {
 
 .rotulo {
   font-size: 12px;
-  color: #999;
+  color: #1a1a1a;
   font-weight: 500;
 }
 
@@ -270,7 +270,7 @@ body {
 
 .linha-freq small {
   font-size: 11px;
-  color: #bbb;
+  color: #1a1a1a;
 }
 
 .linha-data {
@@ -282,7 +282,7 @@ body {
 }
 
 .linha-data:hover {
-  background: #f7f7f7;
+  background: #f77373;
 }
 
 .caixa-data {
@@ -316,7 +316,7 @@ body {
 .linha-data small {
   display: block;
   font-size: 12px;
-  color: #aaa;
+  color: 1a1a1a;
 }
 
 @media (max-width: 700px) {
