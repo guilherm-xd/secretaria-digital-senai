@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: #0f1115;
+  color: #f3f4f6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.nav-topo {
+  background: #161a22;
+  border-bottom: 1px solid #242938;
+  height: 58px;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.link {
+  position: relative;
+  font-size: 13px;
+  color: #9aa4b2;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.link a {
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+}
+
+.link:hover {
+  background: #241417;
+  color: #f3f4f6;
+}
+
+.link.ativo {
+  color: #ff4d4f;
+  background: #33181d;
+  font-weight: 600;
+}
+
+.nav-direita {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sino {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sino:hover {
+  background: #242938;
+}
+
+.emblema {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 14px;
+  height: 14px;
+  background: #ff4d4f;
+  color: white;
+  border-radius: 50%;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px 4px 4px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.usuario:hover {
+  background: #242938;
+}
+
+.usuario img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.usuario span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f3f4f6;
+}
+
+.pagina {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 36px 24px;
+}
+
+.topo-pagina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.topo-pagina h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+  color: #f3f4f6;
+}
+
+.topo-pagina p {
+  font-size: 13px;
+  color: #8b95a7;
+}
+
+.botao {
+  background: #ff4d4f;
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.botao:hover {
+  background: #ff6668;
+}
+
+.estatisticas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #242938;
+  border: 1px solid #242938;
+  border-radius: 14px;
+  overflow: hidden;
+  gap: 1px;
+  margin-bottom: 20px;
+}
+
+.celula {
+  background: #1a1f29;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.numero {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.numero.verde,
+.numero-verde {
+  color: #4ade80;
+}
+
+.numero.vermelho,
+.numero-vermelho {
+  color: #ff4d4f;
+}
+
+.numero.amarelo,
+.numero-laranja {
+  color: #ffb347;
+}
+
+.numero.cinza {
+  color: #9aa4b2;
+}
+
+.numero-rosado {
+  color: #f28b82;
+}
+
+.rotulo {
+  font-size: 12px;
+  color: #8b95a7;
+}
+
+.abas {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.aba {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #9aa4b2;
+  transition: 0.2s;
+}
+
+.aba:hover {
+  background: #242938;
+}
+
+.aba.ativa {
+  background: #33181d;
+  color: #ff4d4f;
+  font-weight: 600;
+}
+
+.filtros {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.campo,
+.selecao {
+  border: 1px solid #2a3140;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  background: #1a1f29;
+  color: #f3f4f6;
+}
+
+.campo::placeholder {
+  color: #8b95a7;
+}
+
+.campo {
+  flex: 1;
+}
+
+.cartao {
+  background: #1a1f29;
+  border-radius: 14px;
+  border: 1px solid #2a3140;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-size: 11px;
+  color: #8b95a7;
+  padding: 14px;
+  border-bottom: 1px solid #2a3140;
+}
+
+td {
+  padding: 14px;
+  border-bottom: 1px solid #242938;
+  font-size: 13px;
+  color: #f3f4f6;
+}
+
+td strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+td small {
+  color: #8b95a7;
+}
+
+.situacao.pronto {
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.situacao.pendente {
+  color: #ffb347;
+  font-weight: 600;
+}
+
+.acoes {
+  display: flex;
+  gap: 6px;
+}
+
+.acao {
+  text-decoration: none;
+  color: #9aa4b2;
+  border: 1px solid #2a3140;
+  border-radius: 7px;
+  padding: 6px 10px;
+  font-size: 12px;
+  background: #161a22;
+  transition: 0.2s;
+}
+
+.acao:hover {
+  background: #242938;
+  color: #f3f4f6;
+}
+
+.paginacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+}
+
+.texto-paginacao {
+  font-size: 12px;
+  color: #8b95a7;
+}
+
+.paginas {
+  display: flex;
+  gap: 4px;
+}
+
+.pagina-numero {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #2a3140;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  background: #161a22;
+  color: #9aa4b2;
+  transition: 0.2s;
+}
+
+.pagina-numero:hover {
+  background: #242938;
+  color: #f3f4f6;
+}
+
+.pagina-numero.ativa {
+  background: #ff4d4f;
+  color: white;
+  border-color: #ff4d4f;
+}
+
+.caixa-vermelha {
+  background: #33181d;
+}
+
+.caixa-vermelha strong,
+.caixa-vermelha span {
+  color: #ff4d4f;
+}
+
+.caixa-laranja {
+  background: #2f2415;
+}
+
+.caixa-laranja strong,
+.caixa-laranja span {
+  color: #ffb347;
+}
+
+.caixa-neutra {
+  background: #242938;
+}
+
+.caixa-neutra strong {
+  color: #d1d5db;
+}
+
+.caixa-neutra span {
+  color: #9aa4b2;
+}
+
+@media (max-width: 700px) {
+  .topo-pagina {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .filtros {
+    flex-direction: column;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .nav-topo {
+    padding: 0 16px;
+  }
+
+  .pagina {
+    padding: 24px 16px;
+  }
+
+  .estatisticas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .links {
+    display: none;
+  }
+}

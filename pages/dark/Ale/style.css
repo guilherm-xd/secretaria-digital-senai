@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --vermelho: #ff4d4f;
+  --cinza: #2a3140;
+  --bg: #0f1115;
+  --texto: #f3f4f6;
+  --radius: 14px;
+  --fonte: "Plus Jakarta Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+body {
+  font-family: var(--fonte);
+  background: var(--bg);
+  color: var(--texto);
+  overflow-x: hidden;
+}
+
+.nav-topo {
+  height: 58px;
+  padding: 0 48px;
+  background: #161a22;
+  border-bottom: 1px solid #242938;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links,
+.nav-direita {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  gap: 2px;
+}
+
+.nav-direita {
+  gap: 10px;
+}
+
+.link {
+  position: relative;
+  font-size: 13px;
+  color: #9aa4b2;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.link a {
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+}
+
+.link:hover {
+  background: #241417;
+  color: #f3f4f6;
+}
+
+.link.ativo {
+  text-decoration: none;
+  background: #33181d;
+  color: var(--vermelho);
+  font-weight: 600;
+}
+
+.sino {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sino:hover {
+  background: #242938;
+}
+
+.emblema {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--vermelho);
+  color: white;
+  font-size: 9px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usuario {
+  padding: 4px 12px 4px 4px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.usuario:hover {
+  background: #242938;
+}
+
+.usuario img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.usuario span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f3f4f6;
+}
+
+.pagina {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 36px 24px;
+}
+
+.title {
+  margin-top: 36px;
+}
+
+.linha-vertical {
+  border-left: 4px solid var(--vermelho);
+  padding-left: 14px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #f3f4f6;
+}
+
+.cards {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: #1a1f29;
+  border: 1px solid var(--cinza);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: #3a4457;
+}
+
+.topo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #f3f4f6;
+}
+
+.linha {
+  margin-bottom: 12px;
+  border: none;
+  border-top: 1px solid #2a3140;
+}
+
+.texto-card {
+  flex: 1;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: #b3bcc8;
+  font-size: 13px;
+}
+
+.duracao {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #8b95a7;
+  margin-top: auto;
+}
+
+.duracao strong {
+  font-weight: 600;
+  color: #d1d5db;
+}
+
+.card-senai {
+  padding: 16px 20px;
+  border-top: 1px solid #2a3140;
+}
+
+.card-senai p {
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #8b95a7;
+  letter-spacing: 1px;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.status strong {
+  font-size: 11px;
+  font-weight: 700;
+  color: #8b95a7;
+  letter-spacing: 1px;
+}
+
+.verde {
+  color: #4ade80;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.inscreva {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 9px;
+  background: var(--vermelho);
+  color: white;
+  font-family: var(--fonte);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.inscreva:hover {
+  background: #ff6668;
+}
+
+@media (max-width: 700px) {
+  .nav-topo {
+    padding: 0 16px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .pagina {
+    padding: 24px 16px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
