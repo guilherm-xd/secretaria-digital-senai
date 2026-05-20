@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Estágio - SENAI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="nav-topo">
+      <div class="marca">
+        <a href="../Guilherme/index.html">
+          <img
+            src="images/SENAI_São_Paulo_logo.png"
+            alt="Logo do SENAI"
+            width="100px"
+          />
+        </a>
+      </div>
+
+      <div class="links">
+        <a class="link" href="../Guilherme/index.html">Início</a>
+        <a class="link" href="../Gustavo-Almeida/index.html">Documentos</a>
+        <a class="link ativo" href="index.html"> Estágio </a>
+        <a class="link" href="../Ale/index.html">Meus cursos</a>
+        <a class="link" href="../Davy/index.html">Calendário</a>
+        <a class="link" href="../Danilo/Danilo.html">Contato</a>
+      </div>
+
+      <div class="nav-direita">
+        <div class="tema">
+          <a href="../../dark/Guilherme-2/index.html">
+            <img
+              src="images/sun.png"
+              alt="Mudar para modo escuro"
+              width="16px"
+              id="toggle-tema"
+            />
+          </a>
+        </div>
+        <div class="sino">
+          <img
+            src="images/notification-bell.png"
+            alt="Notificações"
+            width="16px"
+          />
+          <span class="emblema">2</span>
+        </div>
+        <div class="usuario">
+          <img src="images/User-avatar.png" alt="Avatar" width="16px" />
+          <span>Usuário</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="pagina">
+      <div class="saudacao">
+        <h1>Estágio</h1>
+        <p>Gerencie seus relatórios, documentos e avaliações de estágio.</p>
+      </div>
+
+      <div class="nav-secoes">
+        <a href="#relatorio" class="secao-link">Relatório de Atividades</a>
+        <a href="#documentos" class="secao-link">Documentos do Estágio</a>
+        <a href="#avaliacao" class="secao-link">Avaliação de Estágio</a>
+      </div>
+
+      <div id="relatorio" class="cartao cartao-secao">
+        <div class="titulo-secao">
+          <h2>Relatório de Atividades</h2>
+        </div>
+
+        <form method="post" enctype="multipart/form-data">
+          <div class="campo-grupo">
+            <label class="campo-label">Empresa</label>
+            <input type="text" class="campo-input campo-largo" name="empresa" />
+          </div>
+
+          <div class="linha-campos">
+            <div class="campo-grupo">
+              <label class="campo-label"
+                >Data início das atividades <span class="obrig">*</span></label
+              >
+              <input
+                type="date"
+                class="campo-input"
+                name="data_inicio"
+                required
+              />
+            </div>
+            <div class="campo-grupo">
+              <label class="campo-label"
+                >Data fim das atividades <span class="obrig">*</span></label
+              >
+              <input type="date" class="campo-input" name="data_fim" required />
+            </div>
+            <div class="campo-grupo">
+              <label class="campo-label">Status</label>
+              <input
+                type="text"
+                class="campo-input"
+                name="status"
+                disabled
+                value="Em andamento"
+              />
+            </div>
+          </div>
+
+          <div class="tabela-ativ">
+            <div class="tabela-cabecalho">
+              <span>Atividades Desenvolvidas <span class="obrig">*</span></span>
+              <span
+                >Nome do Supervisor da Empresa
+                <span class="obrig">*</span></span
+              >
+              <span>Nº de Horas</span>
+            </div>
+
+            <div class="tabela-linha">
+              <input
+                type="text"
+                class="campo-input"
+                name="atividade_1"
+                placeholder="Preencher com a descrição atividade 1 *"
+              />
+              <input
+                type="text"
+                class="campo-input"
+                name="supervisor_1"
+                placeholder="Preencher com nome supervisor *"
+              />
+              <input
+                type="number"
+                class="campo-input campo-horas"
+                name="horas_1"
+                min="0"
+              />
+            </div>
+
+            <div class="tabela-linha">
+              <input
+                type="text"
+                class="campo-input"
+                name="atividade_2"
+                placeholder="Preencher com a descrição atividade 2"
+              />
+              <input
+                type="text"
+                class="campo-input"
+                name="supervisor_2"
+                placeholder="Preencher com nome supervisor"
+              />
+              <input
+                type="number"
+                class="campo-input campo-horas"
+                name="horas_2"
+                min="0"
+              />
+            </div>
+
+            <div class="tabela-linha">
+              <input
+                type="text"
+                class="campo-input"
+                name="atividade_3"
+                placeholder="Preencher com a descrição atividade 3"
+              />
+              <input
+                type="text"
+                class="campo-input"
+                name="supervisor_3"
+                placeholder="Preencher com nome supervisor"
+              />
+              <input
+                type="number"
+                class="campo-input campo-horas"
+                name="horas_3"
+                min="0"
+              />
+            </div>
+
+            <div class="tabela-linha">
+              <input
+                type="text"
+                class="campo-input"
+                name="atividade_4"
+                placeholder="Preencher com a descrição atividade 4"
+              />
+              <input
+                type="text"
+                class="campo-input"
+                name="supervisor_4"
+                placeholder="Preencher com nome supervisor"
+              />
+              <input
+                type="number"
+                class="campo-input campo-horas"
+                name="horas_4"
+                min="0"
+              />
+            </div>
+
+            <div class="tabela-linha">
+              <input
+                type="text"
+                class="campo-input"
+                name="atividade_5"
+                placeholder="Preencher com a descrição atividade 5"
+              />
+              <input
+                type="text"
+                class="campo-input"
+                name="supervisor_5"
+                placeholder="Preencher com nome supervisor"
+              />
+              <input
+                type="number"
+                class="campo-input campo-horas"
+                name="horas_5"
+                min="0"
+              />
+            </div>
+
+            <div class="tabela-linha">
+              <input
+                type="text"
+                class="campo-input"
+                name="atividade_6"
+                placeholder="Preencher com a descrição atividade 6"
+              />
+              <input
+                type="text"
+                class="campo-input"
+                name="supervisor_6"
+                placeholder="Preencher com nome supervisor"
+              />
+              <input
+                type="number"
+                class="campo-input campo-horas"
+                name="horas_6"
+                min="0"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="botao botao-verde">
+            ▶▶ Enviar relatório
+          </button>
+        </form>
+
+        <div class="aviso-info">
+          <p><strong>Prezado(a) Aluno(a),</strong></p>
+          <p>
+            Este relatório deve ser enviado com uma periodicidade máxima de seis
+            meses. Por favor, descreva as atividades realizadas, informe o nome
+            do supervisor da empresa e registre as horas dedicadas a cada
+            atividade.
+          </p>
+          <p>
+            Após preencher, deverá enviar o relatório para análise no botão
+            <strong>▶▶ Enviar relatório</strong>.
+          </p>
+          <p>
+            Quando o documento for aprovado, você receberá um e-mail com as
+            instruções para assiná-lo eletronicamente.
+          </p>
+          <p>
+            Em caso de dúvidas entre em contato com a secretaria. Para consultar
+            o contato da unidade desejada, acesse:
+            <a
+              href="https://sp.senai.br/unidades"
+              target="_blank"
+              class="link-aviso"
+              >Unidades</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div id="documentos" class="cartao cartao-secao">
+        <div class="titulo-secao">
+          <h2>Documentos do Estágio</h2>
+        </div>
+
+        <p class="secao-desc">
+          Acompanhe o status dos documentos exigidos para o seu estágio. Envie
+          os pendentes e acesse os já aprovados.
+        </p>
+
+        <div class="lista-docs">
+          <div class="item-doc">
+            <div class="doc-info">
+              <span class="doc-nome">Termo de Compromisso de Estágio</span>
+              <span class="doc-desc"
+                >Documento obrigatório para início do estágio</span
+              >
+            </div>
+            <div class="doc-acoes">
+              <span class="doc-status status-aprovado">Aprovado</span>
+              <a href="#" class="botao botao-pequeno">Visualizar</a>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="item-doc">
+            <div class="doc-info">
+              <span class="doc-nome">Plano de Atividades</span>
+              <span class="doc-desc"
+                >Descrição das atividades previstas no estágio</span
+              >
+            </div>
+            <div class="doc-acoes">
+              <span class="doc-status status-analise">Aguardando análise</span>
+              <a href="#" class="botao botao-pequeno">Visualizar</a>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="item-doc">
+            <div class="doc-info">
+              <span class="doc-nome">Apólice de Seguro</span>
+              <span class="doc-desc"
+                >Seguro obrigatório contra acidentes pessoais</span
+              >
+            </div>
+            <div class="doc-acoes">
+              <span class="doc-status status-pendente">Pendente</span>
+              <label class="botao botao-pequeno botao-upload">
+                Enviar
+                <input type="file" name="apolice" accept=".pdf,.png,.jpg" />
+              </label>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="item-doc">
+            <div class="doc-info">
+              <span class="doc-nome">Relatório Semestral — 1º Semestre</span>
+              <span class="doc-desc"
+                >Relatório de atividades do primeiro semestre</span
+              >
+            </div>
+            <div class="doc-acoes">
+              <span class="doc-status status-aprovado">Aprovado</span>
+              <a href="#" class="botao botao-pequeno">Visualizar</a>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="item-doc">
+            <div class="doc-info">
+              <span class="doc-nome">Relatório Semestral — 2º Semestre</span>
+              <span class="doc-desc"
+                >Relatório de atividades do segundo semestre</span
+              >
+            </div>
+            <div class="doc-acoes">
+              <span class="doc-status status-pendente">Pendente</span>
+              <label class="botao botao-pequeno botao-upload">
+                Enviar
+                <input type="file" name="relatorio_2" accept=".pdf,.png,.jpg" />
+              </label>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="item-doc">
+            <div class="doc-info">
+              <span class="doc-nome">Declaração de Estágio</span>
+              <span class="doc-desc"
+                >Declaração emitida pela empresa concedente</span
+              >
+            </div>
+            <div class="doc-acoes">
+              <span class="doc-status status-pendente">Pendente</span>
+              <label class="botao botao-pequeno botao-upload">
+                Enviar
+                <input type="file" name="declaracao" accept=".pdf,.png,.jpg" />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="avaliacao" class="cartao cartao-secao">
+        <div class="titulo-secao">
+          <h2>Avaliação de Estágio</h2>
+        </div>
+
+        <p class="secao-desc">
+          Esta avaliação é preenchida pelo supervisor da empresa ao final do
+          período de estágio. Abaixo você pode acompanhar a avaliação recebida.
+        </p>
+
+        <div class="aviso-info aviso-info-neutro">
+          <p><strong>Período de avaliação:</strong> Janeiro a Junho de 2025</p>
+          <p><strong>Empresa:</strong> Empresa Exemplo Ltda.</p>
+          <p><strong>Supervisor:</strong> João Silva</p>
+        </div>
+
+        <form method="post">
+          <div class="criterios">
+            <div class="criterios-cabecalho">
+              <span class="criterio-nome-col">Critério de avaliação</span>
+              <div class="opcoes-aval-header">
+                <span>Ótimo</span>
+                <span>Bom</span>
+                <span>Regular</span>
+                <span>Insuficiente</span>
+              </div>
+            </div>
+
+            <div class="criterio">
+              <span class="criterio-nome">Assiduidade e Pontualidade</span>
+              <div class="opcoes-avaliacao">
+                <label class="opcao-aval"
+                  ><input type="radio" name="assiduidade" value="otimo" />
+                  Ótimo</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="assiduidade" value="bom" />
+                  Bom</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="assiduidade" value="regular" />
+                  Regular</label
+                >
+                <label class="opcao-aval"
+                  ><input
+                    type="radio"
+                    name="assiduidade"
+                    value="insuficiente"
+                  />
+                  Insuficiente</label
+                >
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="criterio">
+              <span class="criterio-nome">Comportamento e Disciplina</span>
+              <div class="opcoes-avaliacao">
+                <label class="opcao-aval"
+                  ><input type="radio" name="comportamento" value="otimo" />
+                  Ótimo</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="comportamento" value="bom" />
+                  Bom</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="comportamento" value="regular" />
+                  Regular</label
+                >
+                <label class="opcao-aval"
+                  ><input
+                    type="radio"
+                    name="comportamento"
+                    value="insuficiente"
+                  />
+                  Insuficiente</label
+                >
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="criterio">
+              <span class="criterio-nome">Iniciativa e Criatividade</span>
+              <div class="opcoes-avaliacao">
+                <label class="opcao-aval"
+                  ><input type="radio" name="iniciativa" value="otimo" />
+                  Ótimo</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="iniciativa" value="bom" />
+                  Bom</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="iniciativa" value="regular" />
+                  Regular</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="iniciativa" value="insuficiente" />
+                  Insuficiente</label
+                >
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="criterio">
+              <span class="criterio-nome">Qualidade do Trabalho</span>
+              <div class="opcoes-avaliacao">
+                <label class="opcao-aval"
+                  ><input type="radio" name="qualidade" value="otimo" />
+                  Ótimo</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="qualidade" value="bom" />
+                  Bom</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="qualidade" value="regular" />
+                  Regular</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="qualidade" value="insuficiente" />
+                  Insuficiente</label
+                >
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="criterio">
+              <span class="criterio-nome">Relacionamento Interpessoal</span>
+              <div class="opcoes-avaliacao">
+                <label class="opcao-aval"
+                  ><input type="radio" name="relacionamento" value="otimo" />
+                  Ótimo</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="relacionamento" value="bom" />
+                  Bom</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="relacionamento" value="regular" />
+                  Regular</label
+                >
+                <label class="opcao-aval"
+                  ><input
+                    type="radio"
+                    name="relacionamento"
+                    value="insuficiente"
+                  />
+                  Insuficiente</label
+                >
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="criterio">
+              <span class="criterio-nome">Responsabilidade</span>
+              <div class="opcoes-avaliacao">
+                <label class="opcao-aval"
+                  ><input type="radio" name="responsabilidade" value="otimo" />
+                  Ótimo</label
+                >
+                <label class="opcao-aval"
+                  ><input type="radio" name="responsabilidade" value="bom" />
+                  Bom</label
+                >
+                <label class="opcao-aval"
+                  ><input
+                    type="radio"
+                    name="responsabilidade"
+                    value="regular"
+                  />
+                  Regular</label
+                >
+                <label class="opcao-aval"
+                  ><input
+                    type="radio"
+                    name="responsabilidade"
+                    value="insuficiente"
+                  />
+                  Insuficiente</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="campo-grupo campo-obs-grupo">
+            <label class="campo-label">Observações do Supervisor</label>
+            <textarea
+              class="campo-input campo-obs"
+              name="observacoes"
+              placeholder="Observações gerais sobre o desempenho do estagiário..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="botao">Enviar avaliação</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

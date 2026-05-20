@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+body {
+  background: #0f1115;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #f3f4f6;
+}
+
+.nav-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+  padding: 0 48px;
+  background: #171a21;
+  border-bottom: 1px solid #262b35;
+}
+
+.links {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.link {
+  position: relative;
+  font-size: 13px;
+  color: #9ca3af;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.link a {
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+}
+
+.link:hover {
+  background: #232834;
+  color: #f3f4f6;
+}
+
+.link.ativo {
+  background: #2a1618;
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+.nav-direita {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sino {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.sino:hover {
+  background: #232834;
+}
+
+.emblema {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #ff4d4d;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px 4px 4px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.usuario:hover {
+  background: #1b1f27;
+}
+
+.usuario img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.usuario span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f3f4f6;
+}
+
+.pagina {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 36px 24px;
+}
+
+.saudacao {
+  margin-bottom: 28px;
+}
+
+.saudacao h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #f9fafb;
+}
+
+.saudacao p {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.cartao {
+  border: 1px solid #262b35;
+  border-radius: 14px;
+  background: #171a21;
+  padding: 18px 20px 20px;
+}
+
+.cartao hr {
+  border: none;
+  border-top: 1px solid #262b35;
+  margin: 2px 0;
+}
+
+.botao {
+  display: inline-block;
+  background: #d62828;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 10px 18px;
+  border-radius: 9px;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.botao:visited {
+  color: #fff;
+}
+
+.botao:hover {
+  background: #ef4444;
+}
+
+.nav-secoes {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #262b35;
+  padding-bottom: 0;
+}
+
+.secao-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #9ca3af;
+  padding: 10px 16px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  border-radius: 8px 8px 0 0;
+}
+
+.secao-link:hover {
+  color: #f3f4f6;
+  background: #1f2430;
+}
+
+.cartao-secao {
+  margin-bottom: 20px;
+}
+
+.titulo-secao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #262b35;
+}
+
+.titulo-secao h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f9fafb;
+}
+
+.secao-desc {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.campo-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #d1d5db;
+  letter-spacing: 0.3px;
+}
+
+.obrig {
+  color: #ff6b6b;
+}
+
+.campo-input {
+  border: 1px solid #303644;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  color: #f3f4f6;
+  background: #11151c;
+  outline: none;
+  width: 100%;
+}
+
+.campo-input:focus {
+  border-color: #ff6b6b;
+  background: #161b22;
+}
+
+.campo-input:disabled {
+  background: #1c212b;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.campo-largo {
+  width: 100%;
+}
+
+.linha-campos {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.linha-campos .campo-grupo {
+  flex: 1;
+  min-width: 140px;
+}
+
+.tabela-ativ {
+  border: 1px solid #262b35;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.tabela-cabecalho {
+  display: grid;
+  grid-template-columns: 1fr 1fr 90px;
+  background: #1c212b;
+  padding: 10px 14px;
+  gap: 10px;
+  border-bottom: 1px solid #262b35;
+}
+
+.tabela-cabecalho span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #d1d5db;
+}
+
+.tabela-linha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 90px;
+  padding: 8px 14px;
+  gap: 10px;
+  border-bottom: 1px solid #262b35;
+  align-items: center;
+}
+
+.tabela-linha:last-child {
+  border-bottom: none;
+}
+
+.tabela-linha .campo-input {
+  border-color: #303644;
+}
+
+.campo-horas {
+  text-align: center;
+}
+
+.botao-verde {
+  background: #1f8f5f;
+  border: none;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+.botao-verde:hover {
+  background: #27b06f;
+}
+
+.aviso-info {
+  background: #2a1618;
+  border: 1px solid #5a2a2d;
+  border-radius: 10px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.aviso-info p {
+  font-size: 13px;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.aviso-info strong {
+  color: #ff6b6b;
+}
+
+.aviso-info-neutro {
+  background: #1c212b;
+  border-color: #303644;
+  margin-bottom: 20px;
+}
+
+.aviso-info-neutro strong {
+  color: #f3f4f6;
+}
+
+.link-aviso {
+  color: #ff6b6b;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.lista-docs {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-doc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 10px;
+  gap: 14px;
+}
+
+.item-doc:hover {
+  background: #1c212b;
+}
+
+.doc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.doc-nome {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f3f4f6;
+}
+
+.doc-desc {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.doc-acoes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.doc-status {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 99px;
+}
+
+.status-aprovado {
+  background: #163524;
+  color: #4ade80;
+}
+
+.status-pendente {
+  background: #34181b;
+  color: #ff6b6b;
+}
+
+.status-analise {
+  background: #3a2a18;
+  color: #fbbf24;
+}
+
+.botao-pequeno {
+  font-size: 12px;
+  padding: 7px 14px;
+}
+
+.botao-upload {
+  cursor: pointer;
+}
+
+.botao-upload input[type="file"] {
+  display: none;
+}
+
+.criterios {
+  border: 1px solid #262b35;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.criterios-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1c212b;
+  padding: 10px 14px;
+  border-bottom: 1px solid #262b35;
+}
+
+.criterio-nome-col {
+  font-size: 12px;
+  font-weight: 700;
+  color: #d1d5db;
+}
+
+.opcoes-aval-header {
+  display: flex;
+  gap: 24px;
+}
+
+.opcoes-aval-header span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #d1d5db;
+  width: 80px;
+  text-align: center;
+}
+
+.criterio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.criterio-nome {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f3f4f6;
+  min-width: 200px;
+}
+
+.opcoes-avaliacao {
+  display: flex;
+  gap: 0;
+}
+
+.opcao-aval {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #d1d5db;
+  cursor: pointer;
+  width: 104px;
+}
+
+.opcao-aval input[type="radio"] {
+  accent-color: #ff4d4d;
+  cursor: pointer;
+}
+
+.campo-obs-grupo {
+  margin-bottom: 16px;
+}
+
+.campo-obs {
+  resize: vertical;
+  min-height: 90px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@media (max-width: 700px) {
+  .nav-topo {
+    padding: 0 16px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .pagina {
+    padding: 24px 16px;
+  }
+
+  .nav-secoes {
+    flex-direction: column;
+    border-bottom: none;
+    gap: 2px;
+  }
+
+  .secao-link {
+    border-bottom: none;
+    border-radius: 8px;
+    border: 1px solid #262b35;
+    text-align: center;
+  }
+
+  .tabela-cabecalho,
+  .tabela-linha {
+    grid-template-columns: 1fr;
+  }
+
+  .tabela-cabecalho span:not(:first-child),
+  .tabela-linha .campo-horas {
+    display: none;
+  }
+
+  .item-doc {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .criterios-cabecalho {
+    display: none;
+  }
+
+  .opcoes-avaliacao {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .opcao-aval {
+    width: auto;
+    justify-content: flex-start;
+  }
+}
