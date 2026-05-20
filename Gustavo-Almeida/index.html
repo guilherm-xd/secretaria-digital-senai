@@ -1,271 +1,262 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentos - Secretaria Digital SENAI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <title>Documentos - Secretaria Digital SENAI</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <nav class="nav-topo">
-    <div class="marca">
-      <img src="images/SENAI_São_Paulo_logo.png" alt="Logo do SENAI" width="100px" />
-    </div>
-
-    <div class="links">
-      <span class="link">Início</span>
-      <span class="link ativo">Documentos</span>
-      <span class="link">Estágio</span>
-      <span class="link">Meus cursos</span>
-      <span class="link">Contato</span>
-    </div>
-
-    <div class="nav-direita">
- <div class="sino">
-          <img src="images/notification-bell.png" alt="Notificações" width="20px" />
+  <body>
+    <nav class="nav-topo">
+      <div class="marca">
+        <img src="images/SENAI_São_Paulo_logo.png" alt="Logo do SENAI" width="100px" />
+      </div>
+      <div class="links">
+        <span class="link">Início</span>
+        <span class="link ativo">Documentos</span>
+        <span class="link">Estágio</span>
+        <span class="link">Meus cursos</span>
+        <span class="link">Calendário</span>
+        <span class="link">Contato</span>
+      </div>
+      <div class="nav-direita">
+        <div class="sino">
+          <img src="images/notification-bell.png" alt="Notificações" width="16px" />
           <span class="emblema">2</span>
+        </div>
+        <div class="usuario">
+          <img src="images/User-avatar.png" alt="Avatar" width="16px" />
+          <span>Usuário</span>
+        </div>
+      </div>
+    </nav>
+    <div class="pagina">
+      <div class="topo-pagina">
+        <div>
+          <h1>Documentos</h1>
+          <p>Histórico de documentos emitidos e pendentes.</p>
+        </div>
+
+        <a href="#" class="botao">Emitir documento</a>
       </div>
 
-      <div class="usuario">
-        <img src="images/User-avatar.png" alt="Avatar" />
-        <span>Usuário</span>
-      </div>
-    </div>
-  </nav>
+      <div class="estatisticas">
+        <div class="celula">
+          <span class="numero vermelho">12</span>
+          <span class="rotulo">Total emitidos</span>
+        </div>
 
-  <div class="pagina">
-    <div class="topo-pagina">
-      <div>
-        <h1>Documentos</h1>
-        <p>Histórico de documentos emitidos e pendentes.</p>
-      </div>
+        <div class="celula">
+          <span class="numero amarelo">3</span>
+          <span class="rotulo">Pendentes</span>
+        </div>
 
-      <a href="#" class="botao">Emitir documento</a>
-    </div>
+        <div class="celula">
+          <span class="numero verde">9</span>
+          <span class="rotulo">Disponíveis</span>
+        </div>
 
-    <div class="estatisticas">
-      <div class="celula">
-        <span class="numero vermelho">12</span>
-        <span class="rotulo">Total emitidos</span>
-      </div>
-
-      <div class="celula">
-        <span class="numero amarelo">3</span>
-        <span class="rotulo">Pendentes</span>
+        <div class="celula">
+          <span class="numero cinza">2026</span>
+          <span class="rotulo">Ano atual</span>
+        </div>
       </div>
 
-      <div class="celula">
-        <span class="numero verde">9</span>
-        <span class="rotulo">Disponíveis</span>
+      <div class="filtros">
+        <input type="text" placeholder="Buscar documento" class="campo" />
+
+        <select class="selecao">
+          <option>Todos os cursos</option>
+          <option>Desenvolvimento de Sistemas</option>
+          <option>Back-end</option>
+          <option>Python</option>
+        </select>
+
+        <select class="selecao">
+          <option>2026</option>
+          <option>2025</option>
+          <option>2024</option>
+        </select>
       </div>
 
-      <div class="celula">
-        <span class="numero cinza">2026</span>
-        <span class="rotulo">Ano atual</span>
+      <div class="abas">
+        <div class="aba ativa">Todos</div>
+        <div class="aba">Prontos</div>
+        <div class="aba">Pendentes</div>
+        <div class="aba">Cancelados</div>
       </div>
-    </div>
 
-    <div class="filtros">
-      <input type="text" placeholder="Buscar documento" class="campo" />
+      <div class="cartao">
+        <table>
+          <thead>
+            <tr>
+              <th>Documento</th>
+              <th>Solicitado</th>
+              <th>Emitido</th>
+              <th>Formato</th>
+              <th>Situação</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
 
-      <select class="selecao">
-        <option>Todos os cursos</option>
-        <option>Desenvolvimento de Sistemas</option>
-        <option>Back-end</option>
-        <option>Python</option>
-      </select>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Declaração de Matrícula</strong>
+                <small>Desenvolvimento de Sistemas</small>
+              </td>
 
-      <select class="selecao">
-        <option>2026</option>
-        <option>2025</option>
-        <option>2024</option>
-      </select>
-    </div>
+              <td>30/04/2025</td>
 
-    <div class="abas">
-      <div class="aba ativa">Todos</div>
-      <div class="aba">Prontos</div>
-      <div class="aba">Pendentes</div>
-      <div class="aba">Cancelados</div>
-    </div>
+              <td>02/05/2025</td>
 
-    <div class="cartao">
-      <table>
-        <thead>
-          <tr>
-            <th>Documento</th>
-            <th>Solicitado</th>
-            <th>Emitido</th>
-            <th>Formato</th>
-            <th>Situação</th>
-            <th>Ações</th>
-          </tr>
-        </thead>
+              <td>PDF</td>
 
-        <tbody>
-          <tr>
-            <td>
-              <strong>Declaração de Matrícula</strong>
-              <small>Desenvolvimento de Sistemas</small>
-            </td>
+              <td>
+                <span class="situacao pronto">Pronto</span>
+              </td>
 
-            <td>30/04/2025</td>
+              <td>
+                <div class="acoes">
+                  <a href="#" class="acao">Baixar</a>
+                  <a href="#" class="acao">Ver</a>
+                  <a href="#" class="acao">Enviar</a>
+                </div>
+              </td>
+            </tr>
 
-            <td>02/05/2025</td>
+            <tr>
+              <td>
+                <strong>Declaração para Estágio</strong>
+                <small>Desenvolvedor Back-end</small>
+              </td>
 
-            <td>PDF</td>
+              <td>28/04/2025</td>
 
-            <td>
-              <span class="situacao pronto">Pronto</span>
-            </td>
+              <td>-</td>
 
-            <td>
-              <div class="acoes">
-                <a href="#" class="acao">Baixar</a>
-                <a href="#" class="acao">Ver</a>
-                <a href="#" class="acao">Enviar</a>
-              </div>
-            </td>
-          </tr>
+              <td>PDF</td>
 
-          <tr>
-            <td>
-              <strong>Declaração para Estágio</strong>
-              <small>Desenvolvedor Back-end</small>
-            </td>
+              <td>
+                <span class="situacao pendente">Pendente</span>
+              </td>
 
-            <td>28/04/2025</td>
+              <td>
+                <div class="acoes">
+                  <a href="#" class="acao">Cancelar</a>
+                </div>
+              </td>
+            </tr>
 
-            <td>-</td>
+            <tr>
+              <td>
+                <strong>Histórico Escolar</strong>
+                <small>Desenvolvimento de Sistemas</small>
+              </td>
 
-            <td>PDF</td>
+              <td>12/03/2025</td>
 
-            <td>
-              <span class="situacao pendente">Pendente</span>
-            </td>
+              <td>15/03/2025</td>
 
-            <td>
-              <div class="acoes">
-                <a href="#" class="acao">Cancelar</a>
-              </div>
-            </td>
-          </tr>
+              <td>PDF</td>
 
-          <tr>
-            <td>
-              <strong>Histórico Escolar</strong>
-              <small>Desenvolvimento de Sistemas</small>
-            </td>
+              <td>
+                <span class="situacao pronto">Pronto</span>
+              </td>
 
-            <td>12/03/2025</td>
+              <td>
+                <div class="acoes">
+                  <a href="#" class="acao">Baixar</a>
+                  <a href="#" class="acao">Ver</a>
+                </div>
+              </td>
+            </tr>
 
-            <td>15/03/2025</td>
+            <tr>
+              <td>
+                <strong>Comprovante de Frequência</strong>
+                <small>Programação em Python</small>
+              </td>
 
-            <td>PDF</td>
+              <td>05/02/2025</td>
 
-            <td>
-              <span class="situacao pronto">Pronto</span>
-            </td>
+              <td>07/02/2025</td>
 
-            <td>
-              <div class="acoes">
-                <a href="#" class="acao">Baixar</a>
-                <a href="#" class="acao">Ver</a>
-              </div>
-            </td>
-          </tr>
+              <td>PDF</td>
 
-          <tr>
-            <td>
-              <strong>Comprovante de Frequência</strong>
-              <small>Programação em Python</small>
-            </td>
+              <td>
+                <span class="situacao pronto">Pronto</span>
+              </td>
 
-            <td>05/02/2025</td>
+              <td>
+                <div class="acoes">
+                  <a href="#" class="acao">Baixar</a>
+                  <a href="#" class="acao">Ver</a>
+                </div>
+              </td>
+            </tr>
 
-            <td>07/02/2025</td>
+            <tr>
+              <td>
+                <strong>Declaração de Matrícula</strong>
+                <small>Programação em Python</small>
+              </td>
 
-            <td>PDF</td>
+              <td>10/01/2025</td>
 
-            <td>
-              <span class="situacao pronto">Pronto</span>
-            </td>
+              <td>-</td>
 
-            <td>
-              <div class="acoes">
-                <a href="#" class="acao">Baixar</a>
-                <a href="#" class="acao">Ver</a>
-              </div>
-            </td>
-          </tr>
+              <td>PDF</td>
 
-          <tr>
-            <td>
-              <strong>Declaração de Matrícula</strong>
-              <small>Programação em Python</small>
-            </td>
+              <td>
+                <span class="situacao pendente">Pendente</span>
+              </td>
 
-            <td>10/01/2025</td>
+              <td>
+                <div class="acoes">
+                  <a href="#" class="acao">Cancelar</a>
+                </div>
+              </td>
+            </tr>
 
-            <td>-</td>
+            <tr>
+              <td>
+                <strong>Certificado de Conclusão</strong>
+                <small>Desenvolvedor Back-end</small>
+              </td>
 
-            <td>PDF</td>
+              <td>22/11/2024</td>
 
-            <td>
-              <span class="situacao pendente">Pendente</span>
-            </td>
+              <td>24/11/2024</td>
 
-            <td>
-              <div class="acoes">
-                <a href="#" class="acao">Cancelar</a>
-              </div>
-            </td>
-          </tr>
+              <td>PDF + Ass. digital</td>
 
-          <tr>
-            <td>
-              <strong>Certificado de Conclusão</strong>
-              <small>Desenvolvedor Back-end</small>
-            </td>
+              <td>
+                <span class="situacao pronto">Pronto</span>
+              </td>
 
-            <td>22/11/2024</td>
+              <td>
+                <div class="acoes">
+                  <a href="#" class="acao">Baixar</a>
+                  <a href="#" class="acao">Ver</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-            <td>24/11/2024</td>
+        <div class="paginacao">
+          <span class="texto-paginacao">Exibindo 6 de 12 documentos</span>
 
-            <td>PDF + Ass. digital</td>
-
-            <td>
-              <span class="situacao pronto">Pronto</span>
-            </td>
-
-            <td>
-              <div class="acoes">
-                <a href="#" class="acao">Baixar</a>
-                <a href="#" class="acao">Ver</a>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="paginacao">
-        <span class="texto-paginacao">Exibindo 6 de 12 documentos</span>
-
-        <div class="paginas">
-          <div class="pagina-numero">‹</div>
-          <div class="pagina-numero ativa">1</div>
-          <div class="pagina-numero">2</div>
-          <div class="pagina-numero">›</div>
+          <div class="paginas">
+            <div class="pagina-numero">‹</div>
+            <div class="pagina-numero ativa">1</div>
+            <div class="pagina-numero">2</div>
+            <div class="pagina-numero">›</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
