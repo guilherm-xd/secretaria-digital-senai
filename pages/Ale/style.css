@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --vermelho: #ff0000;
   --cinza: #dcdcdc;
@@ -12,252 +11,196 @@
   --radius: 10px;
   --fonte: "Plus Jakarta Sans", sans-serif;
 }
-
 body {
   font-family: var(--fonte);
   background: var(--bg);
   color: var(--texto);
   overflow-x: hidden;
 }
-
-
 .nav-topo {
   height: 58px;
   padding: 0 48px;
   background: white;
   border-bottom: 1px solid #e5e5e5;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .links,
 .nav-direita {
   display: flex;
   align-items: center;
 }
-
 .links {
   gap: 2px;
 }
-
 .nav-direita {
   gap: 10px;
 }
-
 .link {
   padding: 6px 12px;
   border-radius: 8px;
-
+  text-decoration: none;
   font-size: 13px;
   color: #666;
-
   cursor: pointer;
   transition: 0.2s;
 }
-
+.links a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+  font-weight: inherit;
+}
+.links a:visited {
+  color: inherit;
+  text-decoration: none;
+}
 .link:hover {
   background: #fff3f3;
   color: black;
 }
-
 .link.ativo {
+  text-decoration: none;
   background: #fef0f0;
   color: var(--vermelho);
   font-weight: 700;
 }
-
 .sino {
   position: relative;
-
   width: 34px;
   height: 34px;
-
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
 }
-
 .sino:hover {
   background: #f0f0f0;
 }
-
 .emblema {
   position: absolute;
   top: 5px;
   right: 5px;
-
   width: 14px;
   height: 14px;
-
   border-radius: 50%;
-
   background: var(--vermelho);
   color: white;
-
   font-size: 9px;
   font-weight: 700;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .usuario {
   padding: 4px 12px 4px 4px;
   border-radius: 30px;
-
   display: flex;
   align-items: center;
   gap: 8px;
-
   cursor: pointer;
 }
-
 .usuario img {
   width: 26px;
   height: 26px;
   border-radius: 50%;
 }
-
 .usuario span {
   font-size: 13px;
   font-weight: 600;
 }
-
-
 .pagina {
   max-width: 1200px;
   margin: 0 auto;
   padding: 36px 24px;
 }
-
-
 .title {
   margin-top: 50px;
 }
-
 .linha-vertical {
   border-left: 4px solid var(--vermelho);
   padding-left: 15px;
-
   font-size: 50px;
   font-weight: 900;
 }
-
-
 .cards {
   margin-top: 40px;
-
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .card {
   width: 350px;
-
   background: white;
-
   border: 1px solid var(--cinza);
   border-radius: var(--radius);
-
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
 }
-
 .topo {
   padding: 22px;
-
   display: flex;
   flex-direction: column;
   flex: 1;
 }
-
 .card-title {
   margin-bottom: 18px;
-
   text-align: center;
   font-size: 24px;
   font-weight: 900;
   line-height: 1.2;
 }
-
 .linha {
   margin-bottom: 18px;
 }
-
 .texto-card {
   flex: 1;
-
   margin-bottom: 20px;
-
   text-align: center;
   line-height: 1.5;
-
   color: #444;
   font-size: 16px;
 }
-
 .duracao {
   display: flex;
   align-items: center;
   gap: 10px;
-
   margin-top: auto;
 }
-
-
 .card-senai {
   padding: 20px;
   border-top: 1px solid var(--cinza);
 }
-
 .card-senai p {
   margin-bottom: 18px;
-
   text-align: center;
   font-weight: 800;
 }
-
-
 .status {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
 }
-
 .verde {
   color: green;
   font-weight: 900;
 }
-
-
 .inscreva {
   width: 100%;
   height: 48px;
-
   border: none;
   border-radius: var(--radius);
-
   background: var(--vermelho);
   color: white;
-
   font-size: 18px;
   font-weight: 800;
-
   cursor: pointer;
   transition: 0.2s;
 }
-
 .inscreva:hover {
   transform: scale(1.03);
 }
