@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Secretaria Digital - SENAI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-topo">
+      <div class="marca">
+        <img src="images/SENAI_São_Paulo_logo.png" alt="Logo do SENAI" width="100px" />
+      </div>
+      <div class="links">
+        <span class="link">Início</span>
+        <span class="link">Documentos</span>
+        <span class="link">Estágio</span>
+        <span class="link">Meus cursos</span>
+        <span class="link">Calendário</span>
+        <span class="link">Contato</span>
+      </div>
+      <div class="nav-direita">
+        <div class="sino">
+          <img src="images/notification-bell.png" alt="Notificações" width="16px" />
+          <span class="emblema">2</span>
+        </div>
+        <div class="usuario">
+          <img src="images/User-avatar.png" alt="Avatar" width="16px" />
+          <span>Usuário</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="pagina">
+      <div class="saudacao">
+        <h1>Bem-vindo, Usuário.</h1>
+        <p>Resumo da sua conta acadêmica.</p>
+      </div>
+
+      <div class="estatisticas">
+        <div class="celula">
+          <span class="numero numero-vermelho">12</span>
+          <span class="rotulo">Documentos emitidos</span>
+        </div>
+        <div class="celula">
+          <span class="numero numero-laranja">3</span>
+          <span class="rotulo">Esperando emissão</span>
+        </div>
+        <div class="celula">
+          <span class="numero numero-verde">87%</span>
+          <span class="rotulo">Frequência geral</span>
+        </div>
+        <div class="celula">
+          <span class="numero numero-rosado">7</span>
+          <span class="rotulo">Faltas registradas</span>
+        </div>
+      </div>
+
+      <div class="grade">
+        <div class="cartao">
+          <h3>Ações rápidas</h3>
+          <a href="#" class="acao">
+            <div class="icone">
+              <img src="images/emitir-documento.png" alt="Emitir documento" height="25px" />
+            </div>
+            <strong>Emitir documento</strong>
+          </a>
+          <hr />
+          <a href="#" class="acao">
+            <div class="icone">
+              <img src="images/documentos-emitidos.png" alt="Documentos emitidos" height="25px" />
+            </div>
+            <strong>Documentos emitidos</strong>
+          </a>
+          <hr />
+          <a href="#" class="acao">
+            <div class="icone">
+              <img src="images/estagio.png" alt="Ver estágios" height="30px" />
+            </div>
+            <strong>Ver estágios</strong>
+          </a>
+        </div>
+
+        <div class="cartao">
+          <h3>Secretaria acadêmica</h3>
+          <div class="corpo-contato">
+            <p>Em caso de dúvidas, entre em contato com a secretaria acadêmica.</p>
+            <p>Segunda à Sexta, das 08h às 17h.</p>
+            <p>Encontre a unidade mais próxima:</p>
+            <a href="https://sp.senai.br/unidades" target="_blank" class="botao">Ver unidades</a>
+          </div>
+        </div>
+
+        <div class="cartao">
+          <h3>Frequência e Faltas</h3>
+          <div class="corpo-freq">
+            <div class="linha-freq">
+              <div class="info-freq">
+                <strong>Desenvolvimento de Sistemas</strong>
+                <span class="pct-ds">92%</span>
+              </div>
+              <div class="barra">
+                <div class="preench-ds"></div>
+              </div>
+              <small>2 faltas</small>
+            </div>
+            <hr />
+            <div class="linha-freq">
+              <div class="info-freq">
+                <strong>Desenvolvedor Back-end</strong>
+                <span class="pct-be">78%</span>
+              </div>
+              <div class="barra">
+                <div class="preench-be"></div>
+              </div>
+              <small>4 faltas</small>
+            </div>
+            <hr />
+            <div class="linha-freq">
+              <div class="info-freq">
+                <strong>Programação em Python</strong>
+                <span class="pct-py">95%</span>
+              </div>
+              <div class="barra">
+                <div class="preench-py"></div>
+              </div>
+              <small>1 falta</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="cartao cartao-datas">
+  <a href="../Davy/calendario.html" class="botao-calendario">
+    <img src="images/calendar.png" alt="Calendário" width="18px" />
+  </a>
+
+  <h3>Próximas datas</h3>
+
+  <div class="linha-data">
+    <div class="caixa-data caixa-vermelha">
+      <strong>22</strong>
+      <span>MAI</span>
+    </div>
+    <div>
+      <strong>Prova de Programação em Python</strong>
+      <small>Curso · Prazo final</small>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="linha-data">
+    <div class="caixa-data caixa-laranja">
+      <strong>28</strong>
+      <span>MAI</span>
+    </div>
+    <div>
+      <strong>Prova de Back-end</strong>
+      <small>Avaliação · 3º semana</small>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="linha-data">
+    <div class="caixa-data caixa-neutra">
+      <strong>19</strong>
+      <span>JUN</span>
+    </div>
+    <div>
+      <strong>Reunião Geral</strong>
+      <small>Desenvolvimento de Sistemas</small>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </body>
+</html>
