@@ -182,6 +182,26 @@ body {
   margin: 2px 0;
 }
 
+.cartao-datas {
+  position: relative;
+}
+
+.botao-calendario {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao-calendario:hover {
+transform: scale(1.1);
+}
+
 .acao {
   display: flex;
   align-items: center;
