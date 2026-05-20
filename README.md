@@ -29,7 +29,7 @@ O objetivo principal foi praticar desenvolvimento front-end, estruturação de p
 
 ## Tecnologias Utilizadas
 
-- HTML5
+- HTML
 - CSS
 ---
 
