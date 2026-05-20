@@ -38,11 +38,18 @@ body {
 }
 
 .link {
+  position: relative;
   font-size: 13px;
   color: #666;
   padding: 6px 12px;
   border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
+}
+.link a {
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
 }
 
 .link:hover {

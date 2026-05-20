@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -36,11 +38,17 @@ body {
 }
 
 .link {
+  position: relative; 
   font-size: 13px;
   color: #666;
   padding: 6px 12px;
   border-radius: 8px;
   cursor: pointer;
+}
+.link a {
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
 }
 
 .link:hover {
@@ -71,7 +79,9 @@ body {
   cursor: pointer;
 }
 
-.sino:hover { background: #f0f0f0; }
+.sino:hover {
+  background: #f0f0f0;
+}
 
 .emblema {
   position: absolute;
@@ -115,7 +125,9 @@ body {
   padding: 36px 24px;
 }
 
-.saudacao { margin-bottom: 28px; }
+.saudacao {
+  margin-bottom: 28px;
+}
 
 .saudacao h1 {
   font-size: 22px;
@@ -152,10 +164,21 @@ body {
   font-weight: 700;
 }
 
-.numero-vermelho { color: #cc0000; }
-.numero-laranja  { color: #b96c0a; }
-.numero-verde    { color: #1a7a42; }
-.numero-rosado   { color: #9e5151; }
+.numero-vermelho {
+  color: #cc0000;
+}
+
+.numero-laranja {
+  color: #b96c0a;
+}
+
+.numero-verde {
+  color: #1a7a42;
+}
+
+.numero-rosado {
+  color: #9e5151;
+}
 
 .rotulo {
   font-size: 12px;
@@ -208,7 +231,7 @@ body {
 }
 
 .botao-calendario:hover {
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .acao {
@@ -217,10 +240,11 @@ transform: scale(1.1);
   gap: 12px;
   padding: 10px 8px;
   border-radius: 9px;
-  text-decoration: none;
 }
 
-.acao:hover { background: #f7f7f7; }
+.acao:hover {
+  background: #f7f7f7;
+}
 
 .acao strong {
   font-size: 13px;
@@ -246,11 +270,17 @@ transform: scale(1.1);
   font-size: 13px;
   padding: 10px 18px;
   border-radius: 9px;
-  text-decoration: none;
   margin-top: 4px;
+  text-align: center;
 }
 
-.botao:hover { background: #aa0000; }
+.botao:visited {
+  color: #fff;
+}
+
+.botao:hover {
+  background: #aa0000;
+}
 
 .corpo-contato {
   display: flex;
@@ -292,9 +322,20 @@ transform: scale(1.1);
   color: #707070;
 }
 
-.pct-ds { color: #1a7a42; font-weight: 700; }
-.pct-be { color: #b96c0a; font-weight: 700; }
-.pct-py { color: #1a7a42; font-weight: 700; }
+.pct-ds {
+  color: #1a7a42;
+  font-weight: 700;
+}
+
+.pct-be {
+  color: #b96c0a;
+  font-weight: 700;
+}
+
+.pct-py {
+  color: #1a7a42;
+  font-weight: 700;
+}
 
 .barra {
   height: 5px;
@@ -303,9 +344,26 @@ transform: scale(1.1);
   overflow: hidden;
 }
 
-.preench-ds { height: 5px; width: 92%; background: #1a7a42; border-radius: 99px; }
-.preench-be { height: 5px; width: 78%; background: #b96c0a; border-radius: 99px; }
-.preench-py { height: 5px; width: 95%; background: #1a7a42; border-radius: 99px; }
+.preench-ds {
+  height: 5px;
+  width: 92%;
+  background: #1a7a42;
+  border-radius: 99px;
+}
+
+.preench-be {
+  height: 5px;
+  width: 78%;
+  background: #b96c0a;
+  border-radius: 99px;
+}
+
+.preench-py {
+  height: 5px;
+  width: 95%;
+  background: #1a7a42;
+  border-radius: 99px;
+}
 
 .linha-data {
   display: flex;
@@ -315,7 +373,9 @@ transform: scale(1.1);
   border-radius: 9px;
 }
 
-.linha-data:hover { background: #f7f7f7; }
+.linha-data:hover {
+  background: #f7f7f7;
+}
 
 .linha-data strong {
   display: block;
@@ -351,22 +411,54 @@ transform: scale(1.1);
   letter-spacing: 1px;
 }
 
-.caixa-vermelha { background: #fff0f0; }
+.caixa-vermelha {
+  background: #fff0f0;
+}
+
 .caixa-vermelha strong,
-.caixa-vermelha span { color: #cc0000; }
+.caixa-vermelha span {
+  color: #cc0000;
+}
 
-.caixa-laranja { background: #fff8ee; }
+.caixa-laranja {
+  background: #fff8ee;
+}
+
 .caixa-laranja strong,
-.caixa-laranja span { color: #b96c0a; }
+.caixa-laranja span {
+  color: #b96c0a;
+}
 
-.caixa-neutra { background: #f3f3f3; }
-.caixa-neutra strong { color: #555; }
-.caixa-neutra span { color: #999; }
+.caixa-neutra {
+  background: #f3f3f3;
+}
+
+.caixa-neutra strong {
+  color: #555;
+}
+
+.caixa-neutra span {
+  color: #999;
+}
 
 @media (max-width: 700px) {
-  .nav-topo { padding: 0 16px; }
-  .links { display: none; }
-  .pagina { padding: 24px 16px; }
-  .estatisticas { grid-template-columns: repeat(2, 1fr); }
-  .grade { grid-template-columns: 1fr; }
+  .nav-topo {
+    padding: 0 16px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .pagina {
+    padding: 24px 16px;
+  }
+
+  .estatisticas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grade {
+    grid-template-columns: 1fr;
+  }
 }
