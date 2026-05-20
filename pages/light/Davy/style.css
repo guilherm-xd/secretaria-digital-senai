@@ -40,12 +40,13 @@ body {
 .link {
   position: relative;
   font-size: 13px;
+  font-weight: 400;
   color: #666;
   padding: 6px 12px;
   border-radius: 8px;
   cursor: pointer;
-  text-decoration: none;
 }
+
 .link a {
   position: absolute;
   inset: 0;
@@ -77,6 +78,11 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
+}
+
+.sino:hover {
+  background: #f0f0f0;
 }
 
 .emblema {
@@ -99,12 +105,26 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  padding: 4px 12px 4px 4px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #666;
+}
+
+.usuario:hover {
+  background: #f0f0f0;
 }
 
 .usuario img {
   width: 26px;
   height: 26px;
   border-radius: 50%;
+}
+
+.usuario span {
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
 }
 
 .pagina {
@@ -245,12 +265,6 @@ body {
   opacity: 1;
 }
 
-@media (max-width: 900px) {
-  .grade-meses {
-    grid-template-columns: 1fr;
-  }
-}
-
 .bolinha.feriado {
   border: 3px solid #cc0000;
 }
@@ -261,4 +275,24 @@ body {
 
 .bolinha.letivo {
   border: 3px solid #1a7a42;
+}
+
+@media (max-width: 900px) {
+  .grade-meses {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-topo {
+    padding: 0 16px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .pagina {
+    padding: 24px 16px;
+  }
 }

@@ -121,6 +121,11 @@ body {
   border-radius: 50%;
 }
 
+.usuario span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
 .pagina {
   max-width: 1200px;
   margin: 0px auto;
@@ -175,11 +180,6 @@ body {
   border-radius: 14px;
   padding: 18px;
   transition: 0.2s;
-}
-
-.cartao:hover {
-  border-color: #3a4457;
-  transform: translateY(-2px);
 }
 
 .titulo-mes {
@@ -244,7 +244,7 @@ body {
   bottom: 38px;
   left: 50%;
   transform: translateX(-50%);
-  background: #0f1115;
+  background: #000000;
   color: #ffffff;
   padding: 8px 10px;
   border-radius: 8px;
