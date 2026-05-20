@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portal SENAI</title>
   <link rel="stylesheet" href="./style.css" />
   <link rel="icon" href="./img/SENAS.png" type="image/png" />
 </head>
@@ -22,7 +22,7 @@
     <header>
       <nav>
         <div class="top">
-          <a href="https://ead.sp.senai.br/" class="Ead.senai">
+          <a href="https://ead.sp.senai.br/">
             <span class="logo"><img src="./img/senai-logo.webp" alt="SENAI" width="150px" /></span>
           </a>
           <div class="divider"></div>
@@ -34,12 +34,12 @@
       <div class="card-login">
         <div class="card-content">
           <p class="welcome">Portal Digital</p>
-          <h1>INICIO DE SESSÃO NO PORTAL - SESI SP</h1>
+          <h1>ENTRAR NO PORTAL - SENAI SP</h1>
           <p class="description">Informe seus dados para acessar o portal.</p>
           <div class="card-divider"></div>
           <div class="login-box">
             <form>
-              <label for="ddlTipoLogin">Tipo de identificação</label>
+              <label for="login-user">Tipo de identificação</label>
               <div class="select-area">
                 <select name="Tipo de Login" id="login-user" class="form-box">
                   <option value="CPF">CPF</option>
@@ -48,16 +48,28 @@
                 </select>
               </div>
               <div class="form-control">
+                <label for="txtUsuario">Identificação</label>
                 <input
                   type="text"
                   name="txtUsuario"
                   id="txtUsuario"
-                  class="form-control"
                   maxlength="50"
                   placeholder="Digite seu CPF, RNM ou e-mail"
                   autocomplete="username"
                   title="Alunos do Portal EAD utilizar mesmo login/senha"
                 >
+                <label for="txtSenha">Senha</label>
+                <input
+                  type="password"
+                  name="txtSenha"
+                  id="txtSenha"
+                  maxlength="50"
+                  placeholder="Digite sua senha"
+                  autocomplete="current-password"
+                  title="Alunos do Portal EAD utilizar mesmo login/senha"
+                >
+                <br />
+                <br>
                 <input type="submit" name="btnavancar" value="Avançar" id="btnavancar" class="button" />
               </div>
             </form>

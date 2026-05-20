@@ -4,31 +4,15 @@
   box-sizing: border-box;
 }
 
-:root {
-  --branco: #fff;
-  --vermelho: #ff0000;
-  --vermelho-escuro: #680c0c;
-  --vermelho-claro: #ff4d4d;
-  --preto: #1b1b1b;
-  --fonte-geral: "Quicksand", serif;
-  --fonte-head: "IBM Plex Serif", serif;
-  --fonte-alt: "Elms Sans", sans-serif;
-  --font-size-geral: 18px;
-  --font-size-head: 22px;
-  --font-size-alt: 14px;
-  --font-weight-geral: 400;
-  --font-weight-head: 700;
-  --font-weight-alt: 200;
-  --sombra: 0px 4px 24px rgba(0, 0, 0, 0.35);
-  --radius-btn: 8px;
-  --radius-geral: 16px;
+body {
+  font-family: "Elms Sans", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  background: black;
 }
 
-body {
-  font-family: var(--fonte-alt);
-  font-weight: var(--font-weight-alt);
-  font-size: var(--font-size-alt);
-  background: black;
+a {
+  text-decoration: none;
 }
 
 .capa {
@@ -46,7 +30,10 @@ body {
 .slideshow::after {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.45);
   z-index: 1;
 }
@@ -61,55 +48,21 @@ body {
   animation: troca 32s infinite;
 }
 
-.slideshow img:nth-child(1) {
-  animation-delay: 0s;
-}
-.slideshow img:nth-child(2) {
-  animation-delay: 4s;
-}
-.slideshow img:nth-child(3) {
-  animation-delay: 8s;
-}
-.slideshow img:nth-child(4) {
-  animation-delay: 12s;
-}
-.slideshow img:nth-child(5) {
-  animation-delay: 16s;
-}
-.slideshow img:nth-child(6) {
-  animation-delay: 20s;
-}
-.slideshow img:nth-child(7) {
-  animation-delay: 24s;
-}
-.slideshow img:nth-child(8) {
-  animation-delay: 28s;
-}
-
-a {
-  text-decoration: none;
-}
+.slideshow img:nth-child(1) { animation-delay: 0s;  }
+.slideshow img:nth-child(2) { animation-delay: 4s;  }
+.slideshow img:nth-child(3) { animation-delay: 8s;  }
+.slideshow img:nth-child(4) { animation-delay: 12s; }
+.slideshow img:nth-child(5) { animation-delay: 16s; }
+.slideshow img:nth-child(6) { animation-delay: 20s; }
+.slideshow img:nth-child(7) { animation-delay: 24s; }
+.slideshow img:nth-child(8) { animation-delay: 28s; }
 
 @keyframes troca {
-  0% {
-    opacity: 0;
-    transform: scale(1);
-  }
-  5% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-    transform: scale(1.02);
-  }
-  25% {
-    opacity: 0;
-    transform: scale(1.05);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.05);
-  }
+  0%   { opacity: 0; transform: scale(1);    }
+  5%   { opacity: 1;                         }
+  20%  { opacity: 1; transform: scale(1.02); }
+  25%  { opacity: 0; transform: scale(1.05); }
+  100% { opacity: 0; transform: scale(1.05); }
 }
 
 nav {
@@ -117,17 +70,17 @@ nav {
   height: 56px;
   align-items: center;
   margin-bottom: 20px;
-  background: var(--vermelho);
+  background: #ff0000;
   padding-left: 20px;
   max-height: 70px;
   opacity: 0.9;
 }
 
 nav h1 {
-  font-family: var(--fonte-head);
-  font-size: var(--font-size-geral);
-  font-weight: var(--font-weight-geral);
-  color: var(--branco);
+  font-family: "IBM Plex Serif", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
   margin: 0 auto;
 }
 
@@ -145,117 +98,113 @@ header {
 main {
   display: flex;
   justify-content: center;
-  margin-top: -184px;
   align-items: center;
-  min-height: calc(100vh - 76px);
+  margin-top: -184px;
+  min-height: 100vh;
   position: relative;
   z-index: 2;
-}
-
-.welcome {
-  font-family: var(--fonte-alt);
-  font-size: var(--font-size-alt);
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--vermelho);
-  margin-bottom: 0.4rem;
-}
-
-.description {
-  font-family: var(--fonte-alt);
-  font-size: var(--font-size-alt);
-  color: rgb(94, 89, 89);
-  margin-bottom: 1.5rem;
 }
 
 .divider {
   width: 2px;
   height: 40px;
-  background-color: var(--branco);
+  background-color: #fff;
   margin: 0 14px;
   align-self: center;
 }
 
 .card-login {
-  background: var(--branco);
+  background: #fff;
   width: 100%;
   max-width: 460px;
-  border-bottom-left-radius: var(--radius-geral);
-  border-bottom-right-radius: var(--radius-geral);
-  box-shadow: var(--sombra);
+  border-radius: 16px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.35);
   overflow: hidden;
-  padding: 2.5rem;
+  padding: 40px;
 }
 
 .card-login h1 {
-  font-family: var(--fonte-head);
-  font-size: var(--font-size-head);
+  font-family: "IBM Plex Serif", sans-serif;
+  font-size: 22px;
   margin-bottom: 16px;
-  color: var(--preto);
+  color: #1b1b1b;
 }
 
 .card-divider {
   height: 1px;
   background: rgba(128, 128, 128, 0.212);
-  margin: 0 -2.5rem 2rem;
+  margin: 0 -40px 32px;
+}
+
+.welcome {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ff0000;
+  margin-bottom: 6px;
+}
+
+.description {
+  font-size: 14px;
+  color: rgb(94, 89, 89);
+  margin-bottom: 24px;
 }
 
 .login-box {
-  margin-bottom: 1.1rem;
+  margin-bottom: 18px;
 }
 
 .login-box label {
   display: block;
-  font-size: 0.6;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: rgb(94, 89, 89);
-  margin-bottom: 0.4rem;
+  margin-top: 20px;
+  margin-bottom: 6px;
 }
 
 .form-box,
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: var(--radius-btn);
-  font-size: var(--font-size-alt);
+  border-radius: 8px;
+  font-size: 14px;
   width: 100%;
-  margin: 10px 0;
+  margin-bottom: 6px;
 }
 
 .form-box:focus,
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="password"]:focus {
   outline: none;
-  border-color: var(--vermelho);
-  box-shadow: 0 0 5px var(--vermelho);
-  transition:
-    border-color 0.3s,
-    box-shadow 0.3s;
+  border-color: #ff0000;
+  box-shadow: 0 0 5px #ff0000;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .form-box:hover,
-input[type="text"]:hover {
-  border-color: var(--vermelho-claro);
-  box-shadow: 0 0 5px var(--vermelho-claro);
-  transition:
-    border-color 0.1s,
-    box-shadow 0.1s;
+input[type="text"]:hover,
+input[type="password"]:hover {
+  border-color: #ff4d4d;
+  box-shadow: 0 0 5px #ff4d4d;
+  transition: border-color 0.1s, box-shadow 0.1s;
 }
 
 .button {
   padding: 10px;
-  background-color: var(--vermelho);
-  color: var(--branco);
+  background-color: #ff0000;
+  color: #fff;
   border: none;
-  border-radius: var(--radius-btn);
+  border-radius: 8px;
   cursor: pointer;
-  font-size: var(--font-size-alt);
+  font-size: 14px;
   font-weight: bold;
   width: 100%;
 }
 
 .button:hover {
-  background: var(--vermelho-escuro);
+  background: #680c0c;
 }
