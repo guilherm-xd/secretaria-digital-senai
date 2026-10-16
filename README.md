@@ -87,8 +87,8 @@ https://guilherm-xd.github.io/secretaria-digital-senai/
 ## Equipe de Desenvolvimento
 
 - <img src="https://github.com/henriqtw.png?size=24" width="24" align="absmiddle"> [Alexandre Henrique Pereira de Araujo](https://github.com/henriqtw/)
-- <img src="https://github.com/Davy150.png?size=24" width="24" align="absmiddle"> [Davy Santos Gama](https://github.com/Davy150)
 - <img src="https://github.com/Danilog07j.png?size=24" width="24" align="absmiddle"> [Danilo Gonçalves da Silva](https://github.com/Danilog07j)
+- <img src="https://github.com/Davy150.png?size=24" width="24" align="absmiddle"> [Davy Santos Gama](https://github.com/Davy150)
 - <img src="https://github.com/guilherm-xd.png?size=24" width="24" align="absmiddle"> [Guilherme Miranda Murillo](https://github.com/guilherm-xd)
 - <img src="https://github.com/Gustavo-0093.png?size=24" width="24" align="absmiddle"> [Gustavo Oliveira Almeida](https://github.com/Gustavo-0093)
 - <img src="https://github.com/devMiraPy.png?size=24" width="24" align="absmiddle"> [Nicolas da Silva Mira](https://github.com/devMiraPy)
